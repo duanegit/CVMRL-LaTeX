@@ -1,0 +1,83 @@
+\documentclass[12pt,letterpaper]{report}
+\usepackage[intlimits,sumlimits]{amsmath}
+\usepackage{amssymb}
+\usepackage{dsfont}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{lscape}
+\usepackage{setspace}
+\usepackage{subfig}
+\usepackage{placeins}
+%\usepackage{caption}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{tikz}
+%\usetikzlibrary{arrows,snakes,backgrounds}
+\usetikzlibrary{shapes,arrows,snakes,backgrounds}
+\usetikzlibrary{topaths}
+\usetikzlibrary{automata}
+
+
+% alter the page layout as you see fit. Unsure if there are precise specifications for page format of Comprehensive Thesis Proposal.  Will confirm specs with Stephanie and the alter and post revised template. 
+% Set up page layout.
+\setlength{\textheight}{8.5in}   %8.5         % Height of the main body of the text
+\setlength{\topmargin}{-.25in}      % .5" margin on top of page
+\setlength{\headsep}{0.5in}             % space between header and top of body
+\addtolength{\headsep}{-\headheight}    % See The LaTeX Companion, p 85
+\setlength{\footskip}{0.5in}            % space between footer and bottom of body
+\setlength{\textwidth}{6.25in}  %6.25     % width of the body of the text
+\setlength{\oddsidemargin}{0.25in}   %0.25    % 1.5" margin on the left for odd pages
+\setlength{\evensidemargin}{0.25in}  %0.25    % 1.25"  margin on the right for even pages
+\setlength{\marginparwidth}{0.75in}         % width of marginal notes
+\setlength{\marginparsep}{0.125in}      % space between marginal notes and text
+%\flushbottom                    % Make each page fill up the entire page.
+\setcounter{tocdepth}{5}            % Number the subsubsections
+
+
+% blockCMD: you can delete or keep any of the commands in block2.  They are user defined commands that happen to be useful to me. 
+\newcommand{\tab}{\hspace*{5mm}}
+\newcommand{\tabb}{\hspace*{10mm}}
+\newcommand{\tabbb}{\hspace*{15mm}}
+\newcommand{\tabbbb}{\hspace*{20mm}}
+\newcommand{\tabbbbb}{\hspace*{25mm}}
+
+\renewcommand{\vec}[1]{\ensuremath{\mathbf{#1}}}
+\newcommand{\mat}[1]{\ensuremath{\texttt{#1}}}
+\newcommand{\T}{\ensuremath{^\mathsf{ T}}}
+\newcommand{\etal}{\emph{et al.\ }}
+\newcommand{\rank}{\ensuremath{\text{rank}}}
+\newcommand{\til}[1]{\ensuremath{\tilde{#1}}}
+\newcommand{\ontar}{\texttt{On-Target}}
+\newcommand{\offtar}{\texttt{Off-Target}}
+\newcommand{\balphase}{\textit{ballistic phase}}
+\newcommand{\corphase}{\textit{corrective phase}}
+\newcommand{\ttt}[1]{\texttt{#1}}
+\newcommand{\tbf}[1]{\textbf{#1}}
+\newcommand{\e}{\ensuremath{\varepsilon}}
+%% blockCMD:
+
+\title{Proposed Thesis Title}
+\author{Your Name Here}
+
+\onehalfspacing
+\begin{document}
+\date{\today}
+\maketitle
+\tableofcontents
+\listoffigures
+\listoftables
+%---------------------------------------------------------
+\include{Ch1-Introduction}
+\include{Ch2-LiteratureRev1}
+\include{Ch3-LiteratureRev2}
+\include{Ch4-ProposedExp}
+\include{Ch5-ExpectedRes}
+\include{Ch6-DiscussionConclusions}
+\include{AppendixDerivations}
+
+
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{Ieeetr}
+\bibliography{../ThesisBib}  % Presumes ThesisBib.bib file is in parent directory.  Change path as            							 % needed.  Comment out if you are manually inserting *.bbl file
+\end{document}
