@@ -1,0 +1,114 @@
+\appendixChapter{Appendix: Additional system model derivations}
+This appendix contains the derivations of various formulae and analytical expressions given within the body of this work.  This Appendix is provided for those interested readers.
+
+\section{Fitts Law Relationship to Second-order Spring-Mass-Damper Model}
+
+Below we provide the derivation of the application of Fitts' law to a second-order system model as proposed by Langolf~\etal~\cite{LANGOLF73,LANGOLF76} and further investigated by Jagacinski~etal~\cite{Bib:Jagacinski}.  The derivation below provides the intermediate steps between equations~(\ref{eqn:sec_order_fitts1}) and (\ref{eqn:sec_order_fitts2}).
+
+\begin{eqnarray}
+A - \frac{1}{2}W & = & A - A\left(\frac{e^{-\zeta\omega_{n}t}}{\sqrt{1-\zeta^{2}}}\right) \nonumber \\
+\frac{1}{2}W & = &  A\left(\frac{e^{-\zeta\omega_{n}t}}{\sqrt{1-\zeta^{2}}}\right) \nonumber \\
+\frac{W}{2A} & = &  \left(\frac{e^{-\zeta\omega_{n}t}}{\sqrt{1-\zeta^{2}}}\right) \nonumber \\
+\left(\sqrt{1-\zeta^{2}}\right)\frac{W}{2A} & = & e^{-\zeta\omega_{n}t} \nonumber \\
+\ln\left(\sqrt{1-\zeta^{2}}\right)+\ln\left(\frac{W}{2A}\right) & = & -\zeta\omega_{n}t \nonumber \\
+\frac{1}{-\zeta\omega_{n}}\ln\left(\sqrt{1-\zeta^{2}}\right)+\frac{1}{\zeta\omega_{n}}\ln\left(\frac{2A}{W}\right) & = & t \nonumber \\
+\frac{1}{-\zeta\omega_{n}}\ln\left(\sqrt{1-\zeta^{2}}\right)+\frac{\ln2}{\zeta\omega_{n}}\log_{2}\left(\frac{2A}{W}\right) & = & t \nonumber
+\end{eqnarray}
+
+By letting $a=\frac{1}{-\zeta\omega_{n}}\ln(\sqrt{1-\zeta^{2}})$ and $b=\frac{\ln2}{\zeta\omega_{n}}$, we get the traditional Fitts' Law form
+\begin{equation*}
+t = a + b\log_{2}\left(\frac{2A}{W}\right) \nonumber
+\end{equation*}
+
+\section{DES-plant Event Tables and DES-controller State Tables}
+
+This section includes the remaining details of DES-plant event and DES-controller symbol definintions.  The DES-plant event symbols are given in Table~\ref{tab:DESplantMod1}.  The description of hypersurface and camera motion combination triggering the event are partitioned by axial component.  The first block of symbols describes horizontal motion events. The second block describes vertical motion events.  The third block describes depth motion events.
+
+\begin{table}
+\centering
+\caption{DES Plant Event ($\til{X}$) symbol table for the 3-dimensional $l_{2}$-model}\label{tab:DESplantMod1}
+\begin{tabular}{|c|l|l|p{5em}|}
+    \hline
+    \textbf{Symbol} & \textbf{Description of Plant Event Symbols} & \textbf{Hypersurface} & \textbf{Camera Movement}\\
+    \hline
+    $\til{x}_{1}$ & \ontar ~in horizontal ($x_{1}(t)$) & $h_{1}(\vec{x}) > 0$ & left \\
+    $\til{x}_{2}$ & \offtar ~in horizontal ($x_{1}(t)$) & $h_{2}(\vec{x}) > 0$ & right \\
+    $\til{x}_{3}$ & \ontar ~in horizontal ($x_1(t)$) & $h_{3}(\vec{x}) > 0$ & right \\
+    $\til{x}_{4}$ & \offtar ~in horizontal ($x_{1}(t)$) & $h_{4}(\vec{x}) > 0$ & left \\
+    $\til{x}_{5}$ & \ontar ~in horizontal ($x_{1}(t)$) & $h_{1}(\vec{x}) > 0$ & left \\
+    $\til{x}_{6}$ & \offtar ~in horizontal ($x_{1}(t)$) & $h_{2}(\vec{x}) > 0$ & right \\
+    $\til{x}_{7}$ & \ontar ~in horizontal ($x_{1}(t)$) & $h_{3}(\vec{x}) > 0$ & right \\
+    $\til{x}_{8}$ & \offtar ~in horizontal ($x_{1}(t)$) & $h_{4}(\vec{x}) > 0$ & left \\
+    $\til{x}_{9}$ & \ontar ~in horizontal ($x_{1}(t)$) & $h_{1}(\vec{x}) > 0$ & left \\
+    $\til{x}_{10}$ & \offtar ~in horizontal ($x_{1}(t)$) & $h_{2}(\vec{x}) > 0$ & right \\
+    $\til{x}_{11}$ & \ontar ~in horizontal ($x_{1}(t)$) & $h_{3}(\vec{x}) > 0$ & right \\
+    $\til{x}_{12}$ & \offtar ~in horizontal ($x_{1}(t)$) & $h_{4}(\vec{x}) > 0$ & left \\
+    $\varepsilon_i$ & silent events & $h_{i}(\vec{x}) < 0, i=1\ldots4$ & \\
+    \hline
+    $\til{x}_{13}$ & \ontar ~in vertical ($x_{2}(t)$) & $h_5(\vec{x}) > 0$ & down \\
+    $\til{x}_{14}$ & \offtar ~in vertical ($x_{2}(t)$) & $h_6(\vec{x}) > 0$ & up \\
+    $\til{x}_{15}$ & \ontar ~in vertical ($x_{2}(t)$) & $h_7(\vec{x}) > 0$ & up \\
+    $\til{x}_{16}$ & \offtar ~in vertical ($x_{2}(t)$) & $h_8(\vec{x}) > 0$ & down \\
+    $\til{x}_{17}$ & \ontar ~in vertical ($x_{2}(t)$) & $h_5(\vec{x}) > 0$ & down \\
+    $\til{x}_{18}$ & \offtar ~in vertical ($x_{2}(t)$) & $h_6(\vec{x}) > 0$ & up \\
+    $\til{x}_{19}$ & \ontar ~in vertical ($x_{2}(t)$) & $h_7(\vec{x}) > 0$ & up \\
+    $\til{x}_{20}$ & \offtar ~in vertical ($x_{2}(t)$) & $h_8(\vec{x}) > 0$ & down \\
+    $\til{x}_{21}$ & \ontar ~in vertical ($x_{2}(t)$) & $h_5(\vec{x}) > 0$ & down \\
+    $\til{x}_{22}$ & \offtar ~in vertical ($x_{2}(t)$) & $h_6(\vec{x}) > 0$ & up \\
+    $\til{x}_{23}$ & \ontar ~in vertical ($x_{2}(t)$) & $h_7(\vec{x}) > 0$ & up \\
+    $\til{x}_{24}$ & \offtar ~in vertical ($x_{2}(t)$) & $h_8(\vec{x}) > 0$ & down \\
+    $\varepsilon_i$ & silent events & $h_{i}(\vec{x}) < 0, i=5\ldots8$ & \\
+    \hline
+    $\til{x}_{25}$ & \ontar ~in depth ($x_{3}(t)$) & $h_{9}(\vec{x}) > 0$ & forward\\
+    $\varepsilon_i$ & silent events & $h_{9}(\vec{x}) < 0$ & \\
+    \hline
+\end{tabular}
+\end{table}
+
+The DES-controller state symbol definitions for the 3-dimensional $l_{2}$-model are provided in Table~\ref{tab:DESstateMod1}.  There are eleven symbols: nine of which relate to some required tracking motion; one for \ontar ~, and one indicating loss of the target
+
+\begin{table}
+\centering
+\caption{DES-controller state ($\til{S}$) symbol table for the 3-dimensional $l_{2}$-model}\label{tab:DESstateMod1}  \begin{tabular}{|c|l|}
+  \hline
+  \textbf{Symbol} & \textbf{Description of Controller State Symbols} \\
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  $\til{s}_{1}$ & \offtar-Depth \\
+  $\til{s}_{2}$ & \offtar-Left  \\
+  $\til{s}_{3}$ & \offtar-Right \\
+  $\til{s}_{4}$ & \offtar-Below \\
+  $\til{s}_{5}$ & \offtar-Above \\
+  $\til{s}_{6}$ & \offtar-Left-Below (horizontal+vertical) \\
+  $\til{s}_{7}$ & \offtar-Right-Below (horizontal+vertical) \\
+  $\til{s}_{8}$ & \offtar-Left-Above (horizontal+vertical) \\
+  $\til{s}_{9}$ & \offtar-Right-Above (horizontal+vertical) \\
+  $\til{s}_{10}$ & \ontar (horizontal+veritcal+depth) \\
+  $\til{s}_{11}$ & \tt{No-Target} \\
+  \hline
+\end{tabular}
+\end{table}
+
+The DES-controller output symbol definitions for the 3-dimensional $l_{2}$-model are provided in Table~\ref{tab:DESOutputMod1}.  The symbols are mapped from the DES-controller state through the DES-controller output function, $\phi(\til{s})$.  Due to the horizontal axis priority scheme, there $\til{r}_2$ and $\til{r}_3$ have multiple mappings through the output function.
+\begin{table}
+\centering
+\caption{DES-controller output ($\til{R}$) symbol table for the 3-dimensional $l_{2}$-model}\label{tab:DESOutputMod1}
+\begin{tabular}{|c|l|}
+  \hline
+  \textbf{Symbol} & \textbf{Description of Controller Output Symbols} \\
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  $\phi(\til{s}_1)=\til{r}_{1}$ & \ttt{Move-Forward} \\
+  $\phi(\til{s}_2)=\til{r}_{2}$ & \ttt{Move-Left}  \\
+  $\phi(\til{s}_3)=\til{r}_{3}$ & \ttt{Move-Right} \\
+  $\phi(\til{s}_4)=\til{r}_{4}$ & \ttt{Move-Down} \\
+  $\phi(\til{s}_5)=\til{r}_{5}$ & \ttt{Move-Up} \\
+  $\phi(\til{s}_6)=\til{r}_{2}$ & \\
+  $\phi(\til{s}_7)=\til{r}_{3}$ & \\
+  $\phi(\til{s}_8)=\til{r}_{2}$ & \\
+  $\phi(\til{s}_9)=\til{r}_{3}$ & \\
+  $\phi(\til{s}_{10})=\til{r}_{6}$ & \ttt{Stop}: successful acquisition of target \\
+  $\phi(\til{s}_{11})=\til{r}_{7}$ & \ttt{Halt}: no target present \\
+  \hline
+\end{tabular}
+\end{table}

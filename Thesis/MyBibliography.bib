@@ -1,0 +1,2542 @@
+-*- BibTeX -*-
+=====================================
+This file has been created by
+bibAuxExtract.edt on 11.03.07 at 17:30.
+=====================================
+
+
+@ARTICLE{MIKOLA04,
+  AUTHOR =       {Krystian Mikolajczyk and Cordelia Schmid},
+  TITLE =        {Scale and Affine Invariant Interest Point Detectors},
+  JOURNAL =      {International Journal of Computer Vision},
+  YEAR =         {2004},
+  volume =       {60},
+  number =       {1},
+  pages =        {63--86},
+  month =        {October},
+  abstract =     {In this paper we propose a novel approach for detecting interest points invariant to scale and affine
+                    transformations. Our scale and affine invariant detectors are based on the following recent results : (1) Interest points
+                    extracted with the Harris detector can be adapted to affine transformations and give repeatable results (geometrically
+                    stable). (2) The characteristic scale of a local structure is indicated by a local extremum over scale of normalized
+                    derivatives (the Laplacian). (3) The affine shape of a point neighborhood is estimated based on the second moment
+                    matrix.
+                    Our scale invariant detector computes a multi-scale representation for the Harris interest point detector and then
+                    selects points at which a local measure (the Laplacian) is maximal over scales. This provides a set of distinctive
+                    points which are invariant to scale, rotation and translation as well as robust to illumination changes and limited
+                    changes of viewpoint. The characteristic scale determines a scale invariant region for each point. We extend the
+                    scale invariant detector to affine invariance by estimating the affine shape of a point neighborhood. An iterative
+                    algorithm modifies location, scale and neighborhood of each point and converges to affine invariant points. This
+                    method can deal with significant affine transformations including large scale changes. The characteristic scale and
+                    the affine shape of neighborhood determine an affine invariant region for each point.
+                    We present a comparative evaluation of different detectors and show that our approach provides better results
+                    than existing methods. The performance of our detector is also confirmed by excellent matching results; the image
+                    is described by a set of scale/affine invariant descriptors computed on the regions associated with our points.},
+keywords =     {interest points, local features, scale invariance, affine invariance, matching, recognition}
+}
+
+@INPROCEEDINGS{JACQUES05,
+  AUTHOR =       {Duane J. Jacques and Ranga Rodrigo and Kenneth A. McIsaac and Jagath Samarabandu},
+  TITLE =        {An Object Tracking and Visual Servoing System for the Visually Impaired},
+  BOOKTITLE =    {Proceedings of the IEEE International Conference on Robotics and Automation},
+  YEAR =         {2005},
+  pages =        {3510--3515},
+  address =      {Barcelona, Spain},
+  month =        {April},
+  abstract =     {In this work, we have taken the first step towards the creation of a computerized seeing-eye guide dog.
+                    The system we presented extends the development of assistive technology for the visually impaired into
+                    a new area: object tracking and visual servoing. The system uses computer vision to provide a kind of
+                    surrogate sight for the human user; sensing information from the environment and communicating it
+                    through haptic signalling. Our proof-of concept prototype is a low-cost wearable system which uses a
+                    colour camera to analyze a scene and recognize a desired object, then generate tactile cues to the
+                    wearer to steer his or her hand towards the object. We have proved the system in trials with random
+                    users in an unstructured environment.},
+
+}
+
+@INPROCEEDINGS{JACQUES07,
+author={Jacques, D.J. and Rodrigo, R. and McIsaac, K.A. and Samarabandu, J.},
+booktitle={Systems, Man and Cybernetics, 2007. ISIC. IEEE International Conference on},
+title={An application framework for measuring the performance of a visual servo control of a reaching task for the visually impaired},
+year={2007},
+month={oct.},
+volume={},
+number={},
+pages={894 -901},
+abstract={In this work, we propose a framework that can provide performance metrics with regards to the usability of an assistive device designed to provide visual servoing of a reaching task performed by a visually impaired individual. The framework provides a model and methodology from which performance metrics can be synthesized based on robotic manipular kinematics and an adaptation of Fitts' law for reaching task motions in a 3D environment. The purpose of which is to facilitate an understanding of how well the system's design accommodates the user's natural movement style when performing the reaching task. Use of advances in visual tracking techniques employing scale, view-point, and illumination invariant features are incorporated to allow for a further decoupling of the feature space from the joint-level control space.},
+keywords={Fitts law;performance metrics;reaching task;robotic manipular kinematics;visual servo control;visually impaired;handicapped aids;manipulator kinematics;robots;servomechanisms;visual servoing;},
+doi={10.1109/ICSMC.2007.4414104},
+}
+
+@ARTICLE{LINDEB94,
+  AUTHOR =       {T. Linderberg},
+  TITLE =        {Scale-space Theory: A Basic Tool for Analysing Structures at Different Scales},
+  JOURNAL =      {Journal of Applied Statistics},
+  YEAR =         {1994},
+  volume =       {21},
+  number =       {2},
+  pages =        {225--270}
+}
+
+@TECHREPORT{LINDEB98,
+  AUTHOR       = {T. Linderberg},
+  TITLE        = {Principles for Automtic Scale Selection},
+  INSTITUTION  = {Department of Numerical Analysis and Computing Science {KTH} (Royal Institute of Technology)},
+  YEAR         = {1998},
+  address      = {S-100 44 Stockholm, Sweden.}
+}
+
+@ARTICLE{SCHMID00,
+  AUTHOR =       {Cordelia Schmid and Roger Mohr and Christian Bauckhage},
+  TITLE =        {Evaluation of Interest Point Detectors},
+  JOURNAL =      {International Journal of Computer Vision},
+  YEAR =         {2000},
+  volume =       {37},
+  number =       {2},
+  pages =        {151--172},
+  month =        {June},
+  abstract =     {Many different low-level feature detectors exist and it is widely agreed that the evaluation of detectors
+                    is important. In this paper we introduce two evaluation criteria for interest points&apos; repeatability
+                    rate and information content. Repeatability rate evaluates the geometric stability under different
+                    transformations. Information content measures the distinctiveness of features. Different interest point
+                    detectors are compared using these two criteria. We determine which detector gives the best results and
+                    show that it satisfies the criteria well.},
+  keywords =     {interest points; quantitative evaluation; comparison of detectors; repeatability; information content}
+}
+
+@ARTICLE{MIKOLA05,
+  AUTHOR =       {Krystian Mikolajczyk and Cordelia Schmid},
+  TITLE =        {A Performance Evaluation of Local Descriptors},
+  JOURNAL =      {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  YEAR =         {2005},
+  volume =       {27},
+  number =       {10},
+  pages =        {1615--1630},
+  month =        {October}
+}
+
+@ARTICLE{MIKOLA05a,
+  AUTHOR =       {K. Mikolajczyk and T. Tuytelaars and C. Schmid and A. Zisserman and J. Matas and F. Schaffalitzky and T. Kadir and L. Van Gool},
+  TITLE =        {A Comparison of Affine Region Detectors},
+  JOURNAL =      {International Journal of Computer Vision},
+  YEAR =         {2005},
+  volume =       {65},
+  number =       {1-2},
+  pages =        {43--72},
+  month =        {November}
+}
+
+@INPROCEEDINGS{MOREEL05,
+  AUTHOR =       {Pierre Moreels and Pietro Perona},
+  TITLE =        {Evaluation of Features Detectors and Descriptors Based on 3-{D} Objects},
+  BOOKTITLE =    {Proceedings of the Tenth IEEE International Conference on Computer Vision},
+  YEAR =         {2005},
+  volume =       {1},
+  pages =        {800--807},
+  address =      {Washington, DC},
+  month =        {October }
+}
+
+@INPROCEEDINGS{LOWEDA99,
+  AUTHOR =       {David G. Lowe},
+  TITLE =        {Object recognition from Local Scale-invariant Features},
+  BOOKTITLE =    {Proceedings of the Seventh IEEE International Conference on Computer Vision},
+  YEAR =         {1999},
+  volume =       {2},
+  pages =        {1150 -- 1157},
+  address =      {Kerkyra, Corfu, Greece},
+  month =        {September},
+  abstract =     {An object recognition system has been developed that uses a new class of local image features.
+                    The features are invariant to image scaling, translation, and rotation, and partially invariant
+                    to illumination changes and affine or 3D projection. These features share similar properties with
+                    neurons in inferior temporal cortex that are used for object recognition in primate vision.
+                    Features are efficiently detected through a staged filtering approach that identifies stable points
+                    in scale space. Image keys are created that allow for local geometric deformations by representing
+                    blurred image gradients in multiple orientation planes and at multiple scales. The keys are used as
+                    input to a nearest neighbor indexing method that identifies candidate object matches. Final
+                    verification of each match is achieved by finding a low residual least squares solution for the
+                    unknown model parameters. Experimental results show that robust object recognition can be achieved
+                    in cluttered partially occluded images with a computation time of under 2 seconds}
+}
+
+@ARTICLE{LOWEDA04,
+  AUTHOR =       {David G. Lowe},
+  TITLE =        {Distinctive Image Features from Scale-Invariant Keypoints},
+  JOURNAL =      {International Journal of Computer Vision},
+  YEAR =         {2004},
+  volume =       {60},
+  number =       {2},
+  pages =        {31--110},
+  month =        {November},
+  abstract =     {This paper presents a method for extracting distinctive invariant features from images that can be
+                    used to perform reliable matching between different views of an object or scene. The features are
+                    invariant to image scale and rotation, and are shown to provide robust matching across a substantial
+                    range of affine distortion, change in 3D viewpoint, addition of noise, and change in illumination.
+                    The features are highly distinctive, in the sense that a single feature can be correctly matched with
+                    high probability against a large database of features from many images. This paper also describes an
+                    approach to using these features for object recognition. The recognition proceeds by matching
+                    individual features to a database of features from known objects using a fast nearest-neighbor
+                    algorithm, followed by a Hough transform to identify clusters belonging to a single object, and
+                    finally performing verification through least-squares solution for consistent pose parameters.
+                    This approach to recognition can robustly identify objects among clutter and occlusion while achieving
+                    near real-time performance.},
+}
+
+@BOOK{BIGUNJ06,
+  AUTHOR =       {Josef Bigun},
+  TITLE =        {Vision with Direction: A Systematical Introduction to Image Processing and Computer Vision},
+  PUBLISHER =    {Springer-Verlag Berlin Heidelberg},
+  YEAR =         {2006},
+  isbn =         {3-540-273220-0}
+}
+
+@ARTICLE{LINDEB98a,
+  AUTHOR =       {Tony Lindeberg},
+  TITLE =        {Feature Detection with Automatic Scale Selection},
+  JOURNAL =      {International Journal of Computer Vision},
+  YEAR =         {1998},
+  volume =       {30},
+  number =       {2},
+  pages =        {79--116},
+  month =        {November}
+}
+
+@INPROCEEDINGS{SHIJIA94,
+  author =       {Jianbo Shi and Carlo Tomasi},
+  title =        {Good Features to Track},
+  pages =        {593--600},
+  ISBN =         {0-8186-5825-8},
+  booktitle =    {Proceedings of the Conference on Computer Vision and Pattern Recognition},
+  month =        {June},
+  publisher =    {IEEE Computer Society Press},
+  address =      {Los Alamitos, CA},
+  year =         {1994}
+}
+
+@INPROCEEDINGS{BROWNM02,
+  AUTHOR =       {Matthew Brown and David Lowe},
+  TITLE =        {Invariant Features from Interest Point Groups},
+  BOOKTITLE =    {Proceedings of the British Machine Vision Conference},
+  YEAR =         {2002},
+  pages =        {656--665},
+  address =      {Cardiff, UK},
+  month =        {September}
+}
+
+@INPROCEEDINGS{HARRIS88,
+  AUTHOR =       {Chris Harris and Mike J. Stephens},
+  TITLE =        {A Combined Corner and Edge Detector},
+  BOOKTITLE =    {In Proceedings of the 4th Alvey Vision Conference},
+  YEAR =         {1988},
+  pages =        {147--152},
+  address =      {Manchester, UK},
+  month =        {August}
+}
+
+@INCOLLECTION{SIVICJ04,
+  AUTHOR =       {Josef Sivic and Andrew Zisserman},
+  TITLE =        {Efficient Visual Content Retrieval and Mining in Videos},
+  BOOKTITLE =    {Advances in Multimedia Information Processing - PCM 2004},
+  PUBLISHER =    {Springer Berlin Heidelberg},
+  YEAR =         {2004},
+  volume =       {3332},
+  pages =        {471--478}
+}
+
+@INPROCEEDINGS{SIVICJ05,
+  AUTHOR =       {Josef Sivic and Bryan C. Russel and Alexie A. Efros and Andrew Zisserman and William T. Freeman},
+  TITLE =        {Discovering Objects and their Location in Images},
+  BOOKTITLE =    {Proceedings of the Eleventh IEEE International Conference on Computer Vision},
+  YEAR =         {2005},
+  pages =        {370--377},
+  address =      {Beijing, China},
+  month =        {October},
+  abstract =     {We seek to discover the object categories depicted in a set of unlabelled images. We
+                    achieve this using a model developed in the statistical text literature: probabilistic Latent
+                    Semantic Analysis (pLSA). In text analysis this is used to discover topics in a corpus using
+                    the bag-of-words document representation. Here we treat object categories as topics, so that
+                    an image containing instances of several categories is modeled as a mixture of topics. The
+                    model is applied to images by using a visual analogue of a word, formed by vector quantizing
+                    SIFT-like region descriptors. The topic discovery approach successfully translates to the
+                    visual domain: for a small set of objects, we show that both the object categories and
+                    their approximate spatial layout are found without supervision. Performance of this
+                    unsupervised method is compared to the supervised approach of Fergus et al. [8] on a
+                    set of unseen images containing only one object per image. We also extend the bag-of-words
+                    vocabulary to include "doublets" which encode spatially local co-occurring regions. It is
+                    demonstrated that this extended vocabulary gives a cleaner image segmentation. Finally, the
+                    classifi- cation and segmentation methods are applied to a set of images containing multiple
+                    objects per image. These results demonstrate that we can successfully build object class models
+                    from an unsupervised analysis of images.}
+}
+
+@ARTICLE{TAHRI05,
+  AUTHOR={Tahri, O. and Chaumette, F.},
+  TITLE={Point-based and region-based image moments for visual servoing of planar objects},
+  JOURNAL={IEEE Transactions on Robotics and Automation},
+  YEAR={2005},
+  volume={21},
+  number={6},
+}
+
+@INPROCEEDINGS{RODRIG06b,
+  AUTHOR =       {Ranga Rodrigo and Zhenhe Chen and  Jagath Samarabandu},
+  TITLE =        {Feature Motion for Monocular Robot Navigation},
+  BOOKTITLE =    {Proceedings of IEEE International Conference on Information and Automation},
+  YEAR =         {2006},
+  pages =        {5},
+  address =      {Colombo, Sri Lanka},
+  month =        {December}
+}
+
+@INPROCEEDINGS{STETTEN07,
+  AUTHOR =       {Stetten, G. and Klatzky, R. and Nichol, B. and Galeotti, J. and Rockot, K. and Zawrotny, K. and Weiser, D. and Sendgikoski, N. and Horvath, S.},
+  TITLE =        {Fingersight: Fingertip Visual Haptic Sensing and Control},
+  BOOKTITLE =    {Haptic Audio Visual Environments and their Applications},
+  YEAR =         {2007},
+  pages =        {80-83},
+  address =      {Ottawa, Canada},
+  month =        {12-14 October},
+  organization = {IEEE International Workshop},
+}
+
+@INPROCEEDINGS{GALEOTTI08,
+  AUTHOR =       {Galeotti, J. and Horvath, S. and Klatzky, R. and Nichol, B. and Siegel, M. and Stetten, G.},
+  TITLE =        {Fingersight Fingertip Control and Haptic Sensing of the Visual Environment},
+  BOOKTITLE =    {SIGGRAPH},
+  YEAR =         {2008},
+  address =      {Los Angelos, California},
+  month =        {11-15 August},
+}
+
+@INPROCEEDINGS{ZAWROTNY06,
+author={ Zawrotny, K. and Craig, A. and Weiser, D. and Klatzky, R. and Stetten, G.},
+booktitle={Haptic Interfaces for Virtual Environment and Teleoperator Systems, 2006 14th Symposium on},
+title={Fingertip Vibratory Transducer for Detecting Optical Edges Using Regenerative Feedback},
+year={2006},
+month={march},
+volume={},
+number={},
+pages={373-374},
+}
+
+@INPROCEEDINGS{SUDOL10,
+author={Sudol, J. and Dialameh, O. and Blanchard, C. and Dorcey, T.},
+booktitle={Computer Vision and Pattern Recognition Workshops (CVPRW), 2010 IEEE Computer Society Conference on},
+title={LookTel - A comprehensive platform for computer-aided visual assistance},
+year={2010},
+month={june},
+pages={73 -80},
+}
+
+@INPROCEEDINGS{BIGHAM10a,
+author={Bigham, J.P. and Jayant, C. and Miller, A. and White, B. and Yeh, T.},
+booktitle={Computer Vision and Pattern Recognition Workshops (CVPRW), 2010 IEEE Computer Society Conference on},
+title={VizWiz::LocateIt - enabling blind people to locate objects in their environment},
+year={2010},
+month={june},
+pages={65 -72},
+}
+
+@inproceedings{BIGHAM10b,
+ author = {Bigham, Jeffrey P. and Jayant, Chandrika and Ji, Hanjie and Little, Greg and Miller, Andrew and Miller, Robert C. and Miller, Robin and Tatarowicz, Aubrey and White, Brandyn and White, Samual and Yeh, Tom},
+ title = {VizWiz: nearly real-time answers to visual questions},
+ booktitle = {Proceedings of the 23nd annual ACM symposium on User interface software and technology},
+ series = {UIST '10},
+ year = {2010},
+ location = {New York, New York, USA},
+ pages = {333--342},
+ numpages = {10},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@inproceedings{BRADY11,
+ author = {Brady, Erin L.},
+ title = {Analyzing visual questions from visually impaired users},
+ booktitle = {The proceedings of the 13th international ACM SIGACCESS conference on Computers and accessibility},
+ series = {ASSETS '11},
+ year = {2011},
+ location = {Dundee, Scotland, UK},
+ pages = {309--310},
+ numpages = {2},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@INPROCEEDINGS{MATTAR05,
+author={Mattar, M.A. and Hanson, A.R. and Learned-Miller, E.G.},
+booktitle={Computer Vision and Pattern Recognition - Workshops, 2005. CVPR Workshops. IEEE Computer Society Conference on},
+title={Sign Classification using Local and Meta-Features},
+year={2005},
+month={june},
+pages={26},
+ISSN={1063-6919},
+}
+
+@INPROCEEDINGS{SILAPACHOTE05,
+author={Silapachote, P. and Weinman, J. and Hanson, A. and Mattar, M.A. and Weiss, R.},
+booktitle={Computer Vision and Pattern Recognition - Workshops, 2005. CVPR Workshops. IEEE Computer Society Conference on},
+title={Automatic Sign Detection and Recognition in Natural Scenes},
+year={2005},
+month={june},
+pages={27},
+ISSN={1063-6919},
+}
+
+@INPROCEEDINGS{KOSECKA04,
+author={Kosecka, J. and Xiaolong Yang},
+booktitle={Pattern Recognition, 2004. ICPR 2004. Proceedings of the 17th International Conference on},
+title={Global localization and relative pose estimation based on scale-invariant features},
+year={2004},
+month={aug.},
+volume={4},
+number={},
+pages={ 319 - 322 Vol.4},
+ISSN={1051-4651 },
+}
+
+@ARTICLE{COUGHLAN09,
+  AUTHOR =       {Coughlan, J. and Manduchi, R.},
+  TITLE =        {Functional Assessment of a Camera Phone Based Wayfinding System Operated by Blind and Visually Impaired Users},
+  JOURNAL =      {International Journal of Artificial Intelligence Tools, Special Issue on Artificial Intelligence Based Assistive Technologies: Methods and Systems for People with Disabilities},
+  YEAR =         {2009},
+  volume =       {18},
+  number =       {3},
+  pages =        {379-397},
+  month =        {Jun. 1},
+}
+
+@incollection {HILE09,
+   author = {Hile, Harlan and Grzeszczuk, Radek and Liu, Alan and Vedantham, Ramakrishna and Košecka, Jana and Borriello, Gaetano},
+   affiliation = {University of Washington},
+   title = {Landmark-Based Pedestrian Navigation with Enhanced Spatial Reasoning},
+   booktitle = {Pervasive Computing},
+   series = {Lecture Notes in Computer Science},
+   editor = {Tokuda, Hideyuki and Beigl, Michael and Friday, Adrian and Brush, A. and Tobe, Yoshito},
+   publisher = {Springer Berlin / Heidelberg},
+   keyword = {Computer Science},
+   pages = {59-76},
+   volume = {5538},
+   year = {2009}
+}
+
+@MISC{BELONGIE,
+  author =       {Belongie, S. and Galleguillos, C. and Wang, K. and Miller, J. and Rodriguez-Molina, J. and Steinbach, S. and Duerig, T. and Merler, M.},
+  title =        {GroZi: A grocery shopping assistant for the visually impaired},
+  howpublished = {http://grozi.calit2.net/},
+}
+
+@INPROCEEDINGS{CHEN04,
+author={Chen, X. and Yuille, A.L.},
+booktitle={Computer Vision and Pattern Recognition, 2004. CVPR 2004. Proceedings of the 2004 IEEE Computer Society Conference on},
+title={Detecting and reading text in natural scenes},
+year={2004},
+month={june-2},
+volume={2},
+number={},
+pages={ II-366 - II-373 Vol.2},
+}
+
+@Article{KANEKO03,
+author = {Kaneko, Y. and Harada, T. and Hirahara, Y. and Kikuchi, Y. and Yamada, S. and Yanashima, K. and Magatani, K.},
+title = {Development of the navigation system for the visually impaired},
+journal = {IEEE EMBS Asian-Pacific Conference on Biomedical Engineering 2003 (IEEE Cat. No.03EX711)},
+year = {2003},
+pages = {238-239},
+address = {Kyoto, Japan},
+abstract = {There are about 300,000 visually impaired persons in Japan. Most of them are old persons and, cannot become skillful in using a white cane, even if they make effort to learn how to use a white cane. Therefore, some instruments which support the independent activities of the visually impaired are required. In this paper, we will talk about our developed instrument which support the independent walking of the visually impaired in the indoor space. This instrument is composed of a map information system and a navigation system. In map information system, optical beacons and a receiver are used. Optical beacons are set on the ceiling and emit the position code as infrared signal. A receiver receives signal from beacons and informs a map information by artificial voices. The navigation system can follow the colored guide line which is set on the floor. This system is composed of a white cane and a color sensor which is set on the white cane. This color sensor senses colored guide line on the floor. If the cane is on the line, the cane informs a visually impaired user that he or she is on the guide line by vibration. Five normal subjects who were blindfolded were tested with our developed system. All of them could walk along guide line. And map information system worked well. Therefore, we have concluded that our system will be a very valuable one to support activities of the visually impaired},
+keywords = {handicapped aids;intelligent sensors;navigation;optical sensors;},
+}
+
+@Article{MURAI05,
+title = {Autonomous navigation of RFID-sensing robots - Information ensuring for the visually impaired (2)},
+journal = {Conference Proceedings - IEEE International Conference on Systems, Man and Cybernetics},
+author = {Murai, Yasuyuki and Tatsumi, Hisayuki and Tokumasu, Shinji and Miyakawa, Masahiro},
+volume = { 4},
+year = {2005},
+pages = {3634 - 3639},
+address = {Waikoloa, HI, United States},
+}
+
+@Article{ASONUMA04,
+title = {Basic study on obstacle avoidance system for the visually impaired},
+journal = {SICE 2004 Annual Conference (IEEE Cat. No. 04TH8773)},
+author = {Asonuma, M. and Matsumoto, M. and Wada, C.},
+volume = {vol. 3},
+year = {2004},
+pages = {2411 - 2415},
+address = {Sapporo, Japan},
+abstract = {In this paper, we propose a device that indicates the direction of an obstacle that is encroaching into the path of a walking visually impaired person. Our proposed system, which would resemble a pair of eyeglasses, first detects an obstacle and then indicates its direction to the wearer by tactile stimulation to the forehead. This paper describes the preliminary testing for this device which we believe could be an effective tool in assisting the visually impaired lead more independent lives by allowing more freedom and safety of movement},
+}
+
+@Article{ANDO03,
+title = {Electronic sensory systems for the visually impaired},
+journal = {IEEE Instrumentation and Measurement Magazine},
+author = {Ando, Bruno},
+volume = { 6},
+number = { 2},
+year = {2003},
+pages = {62 - 67},
+issn = {1094-6969},
+abstract = {Meaningful advances have been made in the past decades in the development of electronic sensory systems for the visually impaired (ESSVI) people. Collaboration between scientists from different disciplines is required to improve the performance of such devices with particular regard to the degree and the form of the information provided to the blind user.},
+}
+
+@Article{KAWAI02,
+title = {A support system for visually impaired persons to understand three-dimensional visual information using acoustic interface},
+journal = {Proceedings - International Conference on Pattern Recognition},
+author = {Kawai, Yoshihiro and Tomita, Fumiaki},
+volume = { 16},
+number = { 3},
+year = {2002},
+pages = {974-977},
+abstract = {Visual information processing technology is very important in the implementation for sensory substitution of visually impaired persons as well as applications to factory automation. This paper outlines the design of a visual support system that provides 3D visual information using 3D virtual sounds. Three-dimensional information, such as distance map, object recognition, and object tracking required for the visually impaired user, is obtained by analyzing images captured by stereo cameras. Using a 3D virtual acoustic display, which relies on Head Related Transfer Functions (HRTFs), the user is informed of the locations and movements of objects. The user's external auditory sense is not impeded as the system uses bone conduction headphones which do not block out environment sounds. The proposed system is expected to be useful in the situations where the infrastructure is incomplete and the situation changes in realtime. We plan experiments using this system to guide users while walking and playing sports. &copy; 2002 IEEE.},
+}
+
+@Article{SCHWIEBERT02,
+title = {A biomedical smart sensor for the visually impaired},
+journal = {Proceedings of IEEE Sensors 2002. First IEEE International Conference on Sensors (Cat. No.02CH37394)},
+author = {Schwiebert, L. and Gupta, S.K.S. and Auner, P.S.G. and Abrams, G. and Iezzi, R. and McAllister, P.},
+volume = {vol.1},
+year = {2002},
+pages = {693-698},
+address = {Orlando, FL, USA},
+abstract = {In this paper, we describe the current version of the artificial retina prosthesis and cortical implant that we are developing. This research project will require significant advances in a variety of disciplines. We have assembled a multidisciplinary team of researchers in Ophthalmology, Neurosurgery, Computer Networking, VLSI, and Sensors to develop the novel solutions needed to make artificial vision for the visually-impaired a reality. This paper describes the novel approach that we have adopted to providing a complete system for restoring vision to visually-impaired persons - from the signals generated by an external camera to an array of sensors that electrically stimulate the retina via a wireless interface},
+}
+
+@INPROCEEDINGS{WANATABE07,
+author={Watanabe, H. and Kotani, S. and Kiyohiro, N. and Hashiguchi, S.},
+booktitle={Systems, Man and Cybernetics, 2007. ISIC. IEEE International Conference on},
+title={Research and development of WEarable walKing mate system},
+year={2007},
+month={oct.},
+pages={621 -625},
+}
+
+@INPROCEEDINGS{YUAN05,
+author={Yuan, D. and Manduchi, R.},
+booktitle={Computer Vision and Pattern Recognition, 2005. CVPR 2005. IEEE Computer Society Conference on},
+title={Dynamic environment exploration using a virtual white cane},
+year={2005},
+month={june},
+volume={1},
+pages={243-249,
+}
+
+% ************************************* Duane's citations **********************
+
+@ARTICLE{Bib:Ulrich,
+  AUTHOR =       {I. Ulrich  and J. Borenstein},
+  TITLE =        {The GuideCane, Applying Mobile Robot Technologies to Assist the Visually Impaired},
+  JOURNAL =      {IEEE Transactions on Systems, Man and Cybernetics, Part A: Systems and Humans},
+  YEAR =         {2001},
+  volume =       {31},
+  number =       {2},
+  pages =        {131-136}
+}
+
+@BOOK{Bib:Shoval,
+  AUTHOR =       {S. Shoval and I. Ulrich and J. Borenstein},
+  TITLE =        {Computerized Obstacle Avoidance Systems for the Blind and Visually Impaired},
+  PUBLISHER =    {CRC Press},
+  YEAR =         {2000},
+  series =       {Intelligent Systems and Technologies in Rehabilitation Engineering},
+  pages =        {414-448}
+}
+
+@TECHREPORT{Bib:Audette,
+  AUTHOR =       {R. Audette and J. Balthazaar and C. Dunk and J. Zelek},
+  TITLE =        {A stereo-vision system for the visually impaired},
+  INSTITUTION =  {School of Engineering,University of Guelph },
+  YEAR =         {2000},
+  number =       {2000-41x-1},
+  address =      {Guelph, ON, Canada},
+  month =        {December}
+}
+
+@INPROCEEDINGS{Bib:Parker,
+  AUTHOR =       {L.E. Parker},
+  TITLE =        {Current state of the art in distributed autonomous mobile robotics},
+  BOOKTITLE =    {International Symposium on Distributed Autonomous Robotic Systems},
+  YEAR =         {2000},
+  pages =        {3-12},
+  address =      {Knoxville, TN},
+  month =        {October}
+}
+
+@Article{Bib:Hutchinson,
+    AUTHOR = {Seth Hutchinson and Gregory D. Hager and Peter I. Corke},
+    TITLE  = {A tutorial on visual servo control},
+    journal = {IEEE Transactions Robotics and Automation},
+    volume = {12},
+    number = {5},
+    year   = {1996},
+    pages = {651-670}
+}
+
+@Article{Bib:Sanderson,
+language = {English},
+copyright = {Copyright 1981, IEE},
+title = {Image-based visual servo control using relational graph error signals},
+journal = {Proceedings of the International Conference on Cybernetics and Society},
+author = {Sanderson, A.C. and Weiss, L.E.},
+year = {1980},
+pages = {1074 - 7},
+address = {Boston, MA},
+abstract = {Describes an exploratory approach to visual servo control using computation of servo error from a relational graph image representation. Relational data structures are utilized as efficient means to store, retrieve, and process image data. Relational graph descriptions of a visual scene and a reference scene are compared and an error signal is generated. The error signal is used to generate control signals. Specific examples of a relational graph descriptor used to control arc position around polyhedral objects are discussed. These simulation results suggest that the approach may reduce computational load for tasks in a well-structured environment, facilitate adaptation of a system to new environments, and provide a basis for studying optimal strategies for visual servo control},
+keywords = {control system synthesis;robots;servomechanisms;},
+}
+
+@BOOK{Bib:Corke,
+  AUTHOR =       {Petr I. Corke},
+  TITLE =        {Visual Contrl of Robots: High-performance Visual Servoing},
+  PUBLISHER =    {Reserch Studies Press Ltd.},
+  YEAR =         {1997},
+  address =      {Taunton, Somerset, England},
+  isbn =         {0-471-96937-0}
+}
+@ARTICLE{Bib:Samarabandu,
+  AUTHOR =       {J. Samarabandu and R. Acharya and P.C. Cheng},
+  TITLE =        {Analysis and presentation of three-dimensional data sets},
+  JOURNAL =      {Springer-Verlag Multidimensional Microscopy},
+  YEAR =         {1994},
+  pages =        {231-250}
+}
+
+@ARTICLE{Bib:Wei,
+  AUTHOR =       {X. Wei and  J. Samarabandu, R. Devdhar, A. Siegel, R. Acharya, R. Berezney},
+  TITLE =        {Segregation of transcription and replication sites into higher order domains},
+  JOURNAL =      {Science},
+  YEAR =         {1998},
+  volume =       {281},
+  pages =        {1502-1505}
+}
+
+@INPROCEEDINGS{Bib:Ranaweera,
+  AUTHOR =       {K. Ranaweera and J. Samarabandu},
+  TITLE =        {Flexible framework for developing cooperative intelligent image analysis systems},
+  BOOKTITLE =    {Algorithms and Systems II, vol. 5014 of IS\&T/SPIE},
+  YEAR =         {2003}
+  address =      {Santa Clara, USA},
+  month =        {January}
+}
+
+@INPROCEEDINGS{Bib:Nanayakkara,
+  AUTHOR =       {N. Nanayakkara and J. Samarabandu},
+  TITLE =        {Automatic prostate boundary detection in ultrasound images using multiresolution deformable models and fuzzy logic},
+  BOOKTITLE =    {Algorithms and Systems II, vol. 5014 of IS\&T/SPIE},
+  YEAR =         {2003}
+  address =      {Santa Clara, USA},
+  month =        {January}
+}
+
+@INPROCEEDINGS{TAN97,
+  AUTHOR =       {H. Z. Tan and A. Pentland},
+  TITLE =        {Tactual displays for wearable computing},
+  BOOKTITLE =    {Proceedings of the International Symposium on Wearable Computers},
+  YEAR =         {1997},
+  address =      {Cambridge, Massachusetts, USA},
+  month =        {October}
+}
+
+@inproceedings{TAN05,
+ author = {H. Z. Tan and A. Pentland},
+ title = {Tactual displays for sensory substitution and wearable computers},
+ booktitle = {ACM SIGGRAPH 2005 Courses},
+ series = {SIGGRAPH '05},
+ year = {2005},
+ location = {Los Angeles, California},
+ articleno = {105},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+
+@ARTICLE{Bib:Linvill,
+  AUTHOR =       {J. G. Linvill and J.C. Bliss},
+  TITLE =        {A direct translation reading aid for the blind},
+  JOURNAL =      {Proceedings of the Institute of Electrical and Electronic Engineers},
+  YEAR =         {1966},
+  volume =       {54},
+  pages =        {40-51}
+}
+
+@INPROCEEDINGS{Bib:Bergamasco,
+  AUTHOR =       {M. Bergamasco and B. Allotta and L. Bosio and L. Ferretti and G. Parrini and G. Prisco and F. Salsedo and Sartini},
+  TITLE =        {Arm Exoskeleton System for Teleoperation and Virtual Environments Applications},
+  BOOKTITLE =    {Proceedings of the IEEE International Conference on Robotics and Automation},
+  YEAR =         {1994},
+  pages =        {1449-1454},
+  address =      {San Diego, CA},
+  month =        {May}
+}
+
+@ARTICLE{GUPTA06,
+author={A. Gupta and M. K. O'Malley},
+journal={Mechatronics, IEEE/ASME Transactions on},
+title={Design of a haptic arm exoskeleton for training and rehabilitation},
+year={2006},
+month={june},
+volume={11},
+number={3},
+pages={280 - 289},
+}
+
+@INPROCEEDINGS{PERRY06,
+author={J. C. Perry and J. Rosen},
+booktitle={Biomedical Robotics and Biomechatronics, 2006. BioRob 2006. The First IEEE/RAS-EMBS International Conference on}, title={Design of a 7 Degree-of-Freedom Upper-Limb Powered Exoskeleton},
+year={2006},
+month={feb.},
+volume={},
+number={},
+pages={805 -810},
+}
+
+@INPROCEEDINGS{Bib:Rodrigo,
+  AUTHOR =       {Ranga Rodrigo and Jagath Samarabandu},
+  TITLE =        {Focus of attention mechanism for gaze control within a framework for intelligent image analysis tools},
+  BOOKTITLE =    {Electronic Imaging: Science and Technology, IS\&T/SPIE 16th International Symposium},
+  YEAR =         {2004},
+  address =      {San Jose, California},
+  month =        {January}
+}
+
+@ARTICLE{Bib:Canny,
+ author = {J. Canny},
+ title = {A computational approach to edge detection},
+ journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+ volume = {8},
+ number = {6},
+ year = {1986},
+ issn = {0162-8828},
+ pages = {679-698},
+ publisher = {IEEE Computer Society},
+ }
+
+@INPROCEEDINGS{Bib:Meers,
+  AUTHOR =       {Simon Meers and Koren Ward},
+  TITLE =        {A Vision System for Providing the Blind with 3{D} Colour Perception of the Environment},
+  BOOKTITLE =    {Proceedings of the Asia-Pacific Workshop on Visual Information Processing},
+  YEAR =         {2005},
+  address =      {Hong Kong},
+  month =        {December}
+}
+
+% ************************************* Fitts law citations **********************
+@ARTICLE{FITTS54,
+  AUTHOR =       {P.M. Fitts},
+  TITLE =        {The information capacity of the human motor system in controlling the amplitude of movement},
+  JOURNAL =      {Journal of Experimentatl Psychology},
+  YEAR =         {1954},
+  volume =       {47},
+  pages =        {381-391},
+}
+
+@PHDTHESIS{CROSSMAN56,
+  AUTHOR =       {E.R.F.W. Crossman},
+  TITLE =        {The measurement of perceptual load in manual operations},
+  SCHOOL =       {University of Birmingham},
+  YEAR =         {1956},
+  type =         {PhD Thesis},
+}
+
+@ARTICLE{FITTS64,
+  AUTHOR =       {P.M. Fitts and J.R. Peterson},
+  TITLE =        {Information capacity of discrete motor responses},
+  JOURNAL =      {Journal of Experimentatl Psychology},
+  YEAR =         {1964},
+  volume =       {67},
+  pages =        {103-112},
+}
+
+@BOOK{WELFORD68,
+  AUTHOR =       {A.T. Welford},
+  TITLE =        {Fundamental of Skill},
+  PUBLISHER =    {Metheun},
+  YEAR =         {1968},
+  address =      {London},
+}
+
+@ARTICLE{HOFFMANN94,
+  AUTHOR =       {E.R. Hoffmann and I.H. Sheikh},
+  TITLE =        {Effect of varying target height in Fitts' movement task},
+  JOURNAL =      {Ergonomics},
+  YEAR =         {1994},
+  volume =       {37},
+  number =       {6},
+  pages =        {1071-1088},
+}
+
+@Article{FERRIER98,
+language = {English},
+copyright = {Copyright 1998, IEE},
+title = {Achieving a Fitts law relationship for visual guided reaching},
+journal = {Sixth International Conference on Computer Vision (IEEE Cat. No.98CH36271)},
+author = {Ferrier, N.J.},
+year = {1998},
+pages = {903 - 910},
+address = {Bombay, India},
+abstract = {In order to take advantage of the top speed of manipulators, vision cannot be tightly integrated into the motion control loop. Past visual servo control systems have performed satisfactorily with this constraint, however it can be shown that the task execution time can be reduced if the vision system is de-coupled from the low level motor control system. For reaching, there is a trade-off between the accuracy of a motion and the time required to execute motion. In studies of human motor control this tradeoff is quantified by Fitts Law, a relationship between the motion time, the target distance, and the target width. These studies suggest that vision is not used tightly within the control loop, i.e. as a sensor that is servo-ed on, but rather vision is used to determine where the reaching target is and whether target has been reached successfully. Through a simple robotic example we demonstrate that a similar trade off exists between motion accuracy and the motion execution time for visual guided robot reaching motions},
+keywords = {manipulator dynamics;motion control;robot vision;},
+}
+
+@Article{MURATA99,
+language = {English},
+copyright = {Copyright 2000, IEE},
+title = {Proposal of two-dimensional effective target width in Fitts' law},
+journal = {IEEE SMC'99 Conference Proceedings. 1999 IEEE International Conference on Systems, Man, and Cybernetics (Cat. No.99CH37028)},
+author = {Murata, A. and Iwase, H.},
+volume = {vol.2},
+year = {1999},
+pages = {265 - 270},
+address = {Tokyo, Japan},
+abstract = {This research was designed to develop the definition of effective target width in a two-dimensional pointing task. The idea of effective target width in a one-dimensional pointing task was extended to effective target width in a two-dimensional pointing task using the two-dimensional joint probability density function. The validity of this theoretical definition was empirically verified. In the experiment, the moving direction of the mouse was from lower left to upper right. The approach angle was fixed to 45&deg;. The fit of conventional and new models to the experimental data was compared by means of contribution of the regression line which showed the relationship between the index of difficulty and the mean pointing time. As a result, we could obtain higher values of contribution for the modelling that introduced effective target width than that for the conventional modelling without it. In conclusion, the proposed two-dimensional definition of effective target width may be promising for predicting and modelling pointing time in human-computer interactions},
+keywords = {ergonomics;human factors;mouse controllers (computers);probability;user interfaces;},
+}
+
+@ARTICLE{MURATA99a,
+  AUTHOR =       {Murata, A.},
+  TITLE =        {Extending effective target width in Fitts' law to a two-dimensional point task},
+  JOURNAL =      {International Journal of HCI},
+  YEAR =         {1999},
+  volume =       {11},
+  number =       {2},
+  pages =        {137-152},
+}
+
+@Article{GROSSMAN04,
+language = {English},
+copyright = {Compilation and indexing terms, Copyright 2006 Elsevier Inc. All rights reserved},
+title = {Pointing at trivariate targets in 3D environments},
+journal = {Conference on Human Factors in Computing Systems - Proceedings},
+author = {Grossman, Tovi and Balakrishnan, Ravin},
+year = {2004},
+pages = {447 - 454},
+address = {Vienna, Austria},
+abstract = {We investigate pointing in true 3D environments where the target size varies in three spatial dimensions. We also study the effect of the user's physical movement angle on pointing performance. Results show that target size dimension along the primary axis of movement has a greater impact on performance than the other two dimensions. Movement angle also significantly affects performance, and changes the relative impact of the three target dimensions. Building upon recent results in the modeling of bivariate pointing, we propose and validate a new model that describes pointing at trivariate targets. This model also accounts for movement angle, and outperforms previously published models.},
+key = {Virtual reality},
+keywords = {User interfaces;Information dissemination;Data processing;Display devices;Human computer interaction;Computer hardware;},
+}
+
+@inproceedings{FRIEDLANDER98,
+ author = {Friedlander, N. and Schlueter, K. and Mantei, M.},
+ title = {Bullseye\! when Fitts' law doesn't fit},
+ booktitle = {Proceedings of the SIGCHI conference on Human factors in computing systems},
+ series = {CHI '98},
+ year = {1998},
+ isbn = {0-201-30987-4},
+ location = {Los Angeles, California, United States},
+ pages = {257-264},
+ address = {New York, NY, USA},
+}
+
+@Article{YANG-JIN02,
+language = {English},
+copyright = {Copyright 2002, IEE},
+copyright = {Also available on CD-ROM in PDF format},
+title = {An extending Fitts' Law for human upper limb performance evaluation},
+journal = {2001 Conference Proceedings of the 23rd Annual International Conference of the IEEE Engineering in Medicine and Biology Society (Cat. No.01CH37272)},
+author = {Yang, N.F. and Jin, D.W. and Zhang, M. and Huang, C.H. and Wang, R.C.},
+volume = {2},
+year = {2001},
+pages = {1240 - 3},
+address = {Istanbul, Turkey},
+abstract = {Human motor behavior is complex and is challenging to understand. Fitts' Law presented a relationship between speed, accuracy, amplitude of movement and target size in upper extremity tasks. In this paper, Fitts' Law was extended from one-dimensional motion to two-dimensional motion in the polar coordinate system for the human upper limb performance. Based on this, a set of indices were proposed. The index of difficulty and the index of performance were introduced as the general indices for the quality measure of plane pointing movement, which is a basic functional action of upper-limb in human daily life. Five healthy subjects were asked to perform six pointing tasks with different indices of difficulty. All movements were recorded using a Vicon motion analysis system. The movement quality was evaluated using these evaluation indices},
+keywords = {biomechanics;physiological models;},
+}
+
+@Article{Bib:Huang,
+language = {English},
+copyright = {Copyright 2000, IEE},
+title = {Human motion planning based on recursive dynamics and optimal control techniques},
+journal = {Proceedings Computer Graphics International 2000},
+author = {Huang, G. and Metaxas, D. and Lo, J.},
+year = {2000},
+pages = {19 - 28},
+address = {Geneva, Switzerland},
+abstract = {The 3D simulation of human activity based on physics, kinematics, and dynamics in terrestrial and space environments, is becoming increasingly important. Virtual humans may be used to design tasks in terrestrial environments and analyze their physical workload to maximize success and safety without expensive physical mockups. Previously (J. Lo and D. Metaxas, 1999), we presented an efficient optimal control and recursive dynamics based animation system for simulating and controlling the motion of articulated figures, and implemented the approach to several experiments where the simplified articulated models which has serial/closed-loop chain structures with only small degree-of-freedom (less than seven) each. The computation time is from a few minutes up to 4 hours based on the complexity of the model and how close the initial guess of the motion trajectory is to the optimal solution. The paper presents an improved method which can deal with more complicated kinematic chains (tree structures), as well as larger degree-of-freedom serial/closed-loop chain structures. Motion planning is done by first solving the inverse kinematic problem to generate possible trajectories, which gives us a better initial guess of the motion trajectory than the previous one, and then by solving the resulting nonlinear optimal control problem. For example, minimization of the torques during a simulation under certain constraints is often applied and has its origin in the biomechanics literature. Examples of activities shown are chinup and dipdown in different terrestrial environments as well as zero-gravity self orientation and ladder traversal},
+keywords = {closed loop systems;computer animation;digital simulation;kinematics;optimal control;path planning;tree data structures;},
+}
+
+
+@Article{Bib:Yang-Ding,
+language = {English},
+copyright = {Copyright 2005, IEE},
+title = {An algorithm for simulating human arm movement considering the comfort level},
+journal = {Simulation Modelling Practice and Theory},
+journal = {Simul. Modelling Pract. Theory (Netherlands)},
+author = {Feng Yang and Li Ding and Chunxin Yang and Xiugan Yuan},
+volume = { 13},
+number = { 5},
+year = {2005},
+pages = {437 - 449},
+issn = {1569-190X},
+abstract = {Seeking other joint trajectories of human arm in terms of given trajectory of hand is a wide research problem. In this paper, the computational problem of inverse kinematics of arm movement was investigated. On the basis of an eight-DOF arm model, an inverse kinematics algorithm recreating arm motion was developed in accordance with the human's feedback control mechanism of motor. In this method, the comfort level, an ergonomic index was adopted as the performance function of the motor control. Through maximizing the comfort level, human arm movement can be simulated when the end-effector motion is given. This method combines human dynamics and ergonomics. To evaluate the approach, some arm goal-directed movement experiments were carried out. The joint trajectories were predicted with an average R<sup>2</sup>=0.9627 and mean residual error MRE=0.0094 m, which indicates that the presented algorithm provides a feasible method to simulate arm goal-directed movement and can be used as an efficient postural manipulation tool for the virtual reality. [All rights reserved Elsevier]},
+keywords = {end effectors;ergonomics;feedback;manipulator kinematics;virtual reality;},
+}
+
+@BOOK{Bib:Marieb,
+  AUTHOR =       {Elaine N. Marieb and Jon Mallatt},
+  TITLE =        {Human Anatomy},
+  PUBLISHER =    {Benjamin Cummings},
+  YEAR =         {2003},
+  EDITION =      {3rd},
+  isbn =         {0-8053-5335-6},
+}
+
+@ARTICLE{Bib:Denavit-Hartenberg,
+  AUTHOR =       {J. Denavit and R.S. Hartenberg},
+  TITLE =        {A Kinematic Notation for Lower-Pair Mechanisms Based on Matrices},
+  JOURNAL =      {Journal of Applied Mathematics},
+  YEAR =         {1955},
+  pages =        {215-221},
+  month =        {June},
+}
+
+@Article{Bib:Ram,
+language = {English},
+copyright = {Copyright 1998, IEE},
+title = {The people sensor: a mobility aid for the visually impaired},
+journal = {Digest of Papers. Second International Symposium on Wearable Computers (Cat. No.98EX215)},
+author = {Ram, S. and Sharf, J.},
+year = {1998},
+pages = {166 - 7},
+address = {Pittsburgh, PA, USA},
+abstract = {Electronic Travel Aids, which transform visual environmental cues into another sensory modality, have been proven to help visually impaired people travel with a greater degree of psychological comfort and independence. The People Sensor is an Electronic Travel Aid designed to address two issues of importance to visually impaired people: inadvertent cane contact with other pedestrians and objects, and speaking to a person who is no longer within hearing range. The device uses pyroelectric and ultrasound sensors to locate and differentiate between animate (human) and inanimate (non-human) obstructions in the detection path. The distance between the user and the obstruction along with the nature of the obstruction (human or non-human) is transmitted via modulated vibrotactile feedback. Armed with advance knowledge of the presence and location of objects and people in the environment, users of The People Sensor can travel with increased independence, safety and confidence},
+}
+
+@BOOK{Bib:Jagacinski,
+  AUTHOR =       {Richard J. Jagacinski and John M. Flach},
+  TITLE =        {Control Theory for Humans: A Quantative Approach to Modeling Performance},
+  PUBLISHER =    {Lawrence Erlbaum Associates},
+  YEAR =         {2003},
+  address =      {Mahwah, NJ, USA},
+  isbn =         {0-8058-2292-5},
+  keywords =     {Human Information Processing, Perception, Human Behavior, Control Theory},
+}
+
+@ARTICLE{MACKENZIE89,
+  AUTHOR =       {MacKenzie, I.S.},
+  TITLE =        {A note on the information theoretic basis for Fitts' Law},
+  JOURNAL =      {Journal of Motor Behavior},
+  YEAR =         {1989},
+  volume =       {21},
+  pages =        {323-330},
+}
+
+@ARTICLE{MACKENZIE92a,
+  AUTHOR =       {MacKenzie, I.S.},
+  TITLE =        {Fitts' Law as a research and design tool in human-computer interaction},
+  JOURNAL =      {Human Computer Interaction},
+  YEAR =         {1992},
+  volume =       {7},
+  pages =        {91-139},
+}
+
+@article{SOUKOREFF04,
+title = "Towards a standard for pointing device evaluation, perspectives on 27 years of Fitts’ law research in HCI",
+journal = "International Journal of Human-Computer Studies",
+volume = "61",
+number = "6",
+pages = "751 - 789",
+year = "2004",
+note = "<ce:title>Fitts' law 50 years later: applications and contributions from human-computer interaction</ce:title>",
+issn = "1071-5819",
+author = "R. William Soukoreff and I. Scott MacKenzie"
+}
+
+
+@BOOK{Bib:Shannon,
+  AUTHOR =       {Claude E. Shannon and Warren Weaver},
+  TITLE =        {The mathematical theory of communications},
+  PUBLISHER =    {University of Illinois Press},
+  YEAR =         {1949},
+  address =      {Urbanna-Champaign},
+}
+
+@inproceedings{ACCOT97,
+ author = {J. Accot and Z. Shumin},
+ title = {Beyond Fitts' law: models for trajectory-based HCI tasks},
+ booktitle = {CHI '97: Proceedings of the SIGCHI conference on Human factors in computing systems},
+ year = {1997},
+ isbn = {0-89791-802-9},
+ pages = {295-302},
+ location = {Atlanta, Georgia, United States},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+ @ARTICLE{Bib:Chamberlain,
+ title={A comparative investigation into two pointing systems for use with wearable computers while mobile},
+ author={Chamberlain, A.; Kalawsky, R.},
+ journal={Wearable Computers, 2004. ISWC 2004. Eighth International Symposium on},
+ year={31 Oct.-3 Nov. 2004},
+ volume={1},
+ number={},
+ pages={ 110-117},
+ keywords={ human computer interaction, mobile computing, mouse controllers (computers), touch sensitive screens, user interfaces, wearable computers human computer interaction, input devices, mobile computing, off-table mouse, pointing system, target selection, touch screen stylus, user interface, wearable computer},
+ doi={10.1109/ISWC.2004.1},
+ ISSN={1530-0811 },
+ }
+
+@article{MARTIN00,
+title = "Pointing to a target from an upright position in human: tuning of postural responses when there is target uncertainty",
+journal = "Neuroscience Letters",
+volume = "281",
+number = "1",
+pages = "53 - 56",
+year = "2000",
+author = "Olivier Martin and Normand Teasdale and Martin Simoneau and Philippe Corbeil and Christophe Bourdin",
+}
+
+@article{BONNETBLANC04,
+title = {Pointing to a target from an upright standing position: anticipatory postural adjustments are modulated by the size of the target in humans},
+journal = {Neuroscience Letters},
+volume = {358},
+number = {3},
+pages = {181 - 184},
+year = {2004},
+author = {François Bonnetblanc and Olivier Martin and Normand Teasdale},
+abstract = {To examine the influence of the target size onto postural EMG activity, eight subjects performed, from a standing position, rapid and accurate pointings to a target located within reach. The target size was varied across blocks of trials. Hand movement time increased when the target size was decreased. Interestingly, the magnitude of the integrated EMG activity of lower limb muscles (TAi, TFLc, RFi) decreased with a decreasing target size, while that of the erector spinae increased. The effects were observed as early as 200 ms before the hand movement onset. When standing, these early commands could influence the control of the hand during the acceleration phase. The target size was specified within the postural command before any hand movement took place suggesting the characteristics of the pointing task were integrated in a feedforward manner.}
+}
+
+%%%%%%%%%%%%%%%%%%% Camera Calibration %%%%%%%%%%%%%%%%%%%%%%%%%
+ @INPROCEEDINGS{STROBL06,
+  author =	 {K. H. {S}trobl and G. Hirzinger},
+  title =	 {{O}ptimal {H}and-{E}ye {C}alibration},
+  booktitle =	 {Proceedings of the IEEE/RSJ International Conference on
+                  Intelligent Robots and Systems},
+  month =	 {October},
+  year =	 2006,
+  address =	 {Beijing, China},
+  pages =        {4647--4653}
+}
+
+%%%%%%%%%%%%%%%%%%% Camera Calibration %%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+@INBOOK{KLATZKY98,
+  AUTHOR =       {Klatzky, R.L.},
+  editor =       {C. Freska and C. Habel and K.F. Wenders},
+  TITLE =        {Spatial Cognition -- An interdisciplanary approach to representation and processing of spatial knowledge},
+  CHAPTER =      {Allocentric and egocentric spatial representations: Definitions, distinctions and interconnections},
+  pages =        {1-19},
+  PUBLISHER =    {Springer-Verlag},
+  YEAR =         {1998},
+  address =      {Berlin},
+}
+
+@PHDTHESIS{LANGOLF73,
+  AUTHOR =       {Langolf, G.D.},
+  TITLE =        {Human motor performance in precise microscopic work - Development of standard data for microscopic assembly},
+  SCHOOL =       {University of Michigan},
+  YEAR =         {1973},
+  address =      {Ann Arbor, MI},
+}
+
+@ARTICLE{LANGOLF76,
+  AUTHOR =       {Langolf, G.D. and Chaffin, D.B. and Foulke, J.A.},
+  TITLE =        {An investigation of Fitts' Law using a wide range of movement amplitudes},
+  JOURNAL =      {Journal of Motor Behaviour},
+  YEAR =         {1976},
+  volume =       {8},
+  pages =        {113-128},
+}
+
+@inproceedings{WEBER93,
+ author = {Gerhard Weber},
+ title = {Adapting direct manipulation for blind users},
+ booktitle = {CHI '93: INTERACT '93 and CHI '93 conference companion on Human factors in computing systems},
+ year = {1993},
+ isbn = {0-89791-574-7},
+ pages = {21-22},
+ location = {Amsterdam, The Netherlands},
+ doi = {http://doi.acm.org/10.1145/259964.260016},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+ @inproceedings{KABBASH93,
+ author = {Paul Kabbash and I. Scott MacKenzie and William Buxton},
+ title = {Human performance using computer input devices in the preferred and non-preferred hands},
+ booktitle = {CHI '93: Proceedings of the INTERACT '93 and CHI '93 conference on Human factors in computing systems},
+ year = {1993},
+ isbn = {0-89791-575-5},
+ pages = {474--481},
+ location = {Amsterdam, The Netherlands},
+ doi = {http://doi.acm.org/10.1145/169059.169414},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+@inproceedings{JACKO00,
+ author = {Julie A. Jacko and Armando B. Barreto and Gottlieb J. Marmet and Josey Y. M. Chu and Holly S. Bautsch and Ingrid U. Scott and Robert H. Rosa, Jr.},
+ title = {Low vision: the role of visual acuity in the efficiency of cursor movement},
+ booktitle = {Assets '00: Proceedings of the fourth international ACM conference on Assistive technologies},
+ year = {2000},
+ isbn = {1-58113-314-8},
+ pages = {1--8},
+ location = {Arlington, Virginia, United States},
+ doi = {http://doi.acm.org/10.1145/354324.354327},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+@ARTICLE{CANNON94,
+title={Experiments with a target-threshold control theory model for deriving Fitts' law parameters for human-machine systems},
+author={Cannon, D.J.},
+journal={Systems, Man and Cybernetics, IEEE Transactions on},
+year={1994},
+month={Aug},
+volume={24},
+number={8},
+pages={1089-1098},
+abstract={A target-threshold control theory model was developed for predicting human-machine movement time. This allows the previously empirical parameters of Fitts' speed and accuracy law (1954) to be determined before system construction. Fitts' law may now serve a role as a predictive design engineering tool for new systems as well as in its traditional role of after-the-fact analysis. The target-threshold model successfully characterized human control movement times, before system construction, in experiments involving camera pointing for a new class of point-and-direct telerobotics. Employing the natural logarithm as the basis for indexing task difficulty, the slope and intercept parameters were found by analysis of calculated step response trajectories at progressively tighter normalized target thresholds corresponding to increasing distances between targets. Tests validated the model for human subjects using the experimental apparatus of the Stanford Point-And-Direct (PAD) Telerobot for which tasks are developed using phrases such as “put that there”. The target-threshold model is a tool for human factors engineers and control system designers that allows fundamental control theory techniques to be used to predict speed of response for new human-machine systems. The technique allows system developers to compare performance of prospective human-machine systems},
+keywords={human factors, man-machine systems, mobile robots, telecontrolFitts' law parameters, Stanford PAD Telerobot, Stanford Point-And-Direct Telerobot, after-the-fact analysis, calculated step response trajectories, camera pointing, human factors engineers, human-machine movement time prediction, human-machine systems, normalized target thresholds, point-and-direct telerobotics, predictive design engineering tool, target-threshold control theory model, task difficulty index},
+doi={10.1109/21.299694},
+ISSN={0018-9472}, }
+
+@INPROCEEDINGS{STIVER92,
+title={Modeling and analysis of hybrid control systems},
+author={Stiver, J.A. and Antsaklis, P.J.},
+booktitle={Decision and Control, 1992., Proceedings of the 31st IEEE Conference on},
+year={1992},
+volume={4},
+pages={3748-3751},
+abstract={A hybrid control system is a continuous-time system modeled by differential equations, and the controller is a discrete event system modeled by an automaton. A framework for modeling hybrid control systems, including the necessary interface between the plant and controller is presented. A method to represent the entire system as a discrete event system is shown. The concept of determinism is used to analyze hybrid control system behavior and guide in hybrid control system design},
+keywords={ control system analysis, discrete event simulation, modelling automaton, continuous-time system, determinism, differential equations, discrete event system, hybrid control system design},
+}
+
+@INPROCEEDINGS{STIVER93,
+title={Extracting discrete event system models from hybrid control systems },
+author={Stiver, J.A. and Antsaklis, P.J.},
+booktitle={Intelligent Control, 1993., Proceedings of the 1993 IEEE International Symposium on},
+year={1993},
+month={Aug},
+pages={298-301},
+abstract={The state space partitioning in the interface of the hybrid control system is modeled using covering half spaces. This formulation extends a previously introduced model. The covering half spaces are used to define a set of plant events, and a discrete event system model is generated which captures the behavior of the plant and interface of the hybrid control system},
+keywords={ control systems, discrete event systems, state-space methods discrete event system models, half spaces, hybrid control systems, interface, state space partitioning},
+}
+
+@INPROCEEDINGS{STIVER93b,
+title={On the controllability of hybrid control systems},
+author={Stiver, J.A. and Antsaklis, P.J.},
+booktitle={Decision and Control, 1993., Proceedings of the 32nd IEEE Conference on},
+year={1993},
+volume={1},
+month={Dec},
+pages={294-299},
+abstract={It is shown how existing discrete event system (DES) methods can be used to design controllers for hybrid control systems. Specifically, the authors concentrate on the notions of controllability and of the supremal controllable sublanguage, developed by Ramadge and Wonham (1989), and extend those notions to analyze hybrid control control systems using models developed by the authors. Using this notion of controllability, the authors are able to extend DES controller design methods and to design controllers for hybrid control systems},
+keywords={ control system analysis, control system synthesis, controllability, discrete time systems controllability, design methods, discrete event system, hybrid control systems, supremal controllable sublanguage},
+}
+
+@INPROCEEDINGS{STIVER94,
+title={Digital control from a hybrid perspective},
+author={Stiver, J.A. and Antsaklis, P.J. and Lemmon, M.D.},
+booktitle={Decision and Control, 1994., Proceedings of the 33rd IEEE Conference on},
+year={1994},
+month={Dec},
+volume={4},
+pages={4241-4246 vol.4},
+abstract={The framework of hybrid control systems can be used to examine digital control systems. This paper shows how digital control systems can be modeled as hybrid control systems. A technique for designing interfaces for hybrid control systems is presented. An example is employed to demonstrate how this technique, as well as a DES controller design methodology developed earlier, can be applied to improve a digital control system},
+keywords={ digital control DES controller design methodology, digital control, hybrid control systems, interface design},
+doi={10.1109/CDC.1994.411617},
+}
+
+@INPROCEEDINGS{STIVER95,
+title={Hybrid control system design based on natural invariants},
+author={Stiver, J.A. and Antsaklis, P.J. and Lemmon, M.D.},
+booktitle={Decision and Control, 1995., Proceedings of the 34th IEEE Conference on},
+year={1995},
+month={Dec},
+volume={2},
+pages={1455-1460 vol.2},
+abstract={The hybrid control systems considered here consist of a continuous plant under the control of a discrete event system. Communication between the plant and controller is provided by an interface that can convert signal from the continuous domain to the symbolic domain, and vise-versa. Hybrid control system design generally involves designing a controller, possibly designing some or all of the interface, and in some cases, designing a continuous controller that will become part of the continuous-time plant. This paper examines the case where the interface is partially given, along with the plant and a set of control goals. A method is presented which designs the symbol generating portion of the interface and also yields a controller for the system. The method is based on the natural invariants of the plant. This technique is illustrated by an example in which the design process is simulated via a computer program for an unmanned underwater vehicle},
+keywords={continuous time systems, control system synthesis, discrete event systems, invariance, marine systems, nonlinear control systemscontinuous plant, discrete event system, hybrid control system design, natural invariants, symbol generation, symbolic domain, unmanned underwater vehicle},
+doi={10.1109/CDC.1995.480307},
+}
+
+@INPROCEEDINGS{STIVER93c,
+title={State Space Partitioning for Hybrid Control Systems},
+author={Stiver, James A. and Antsaklis, Panos J.},
+booktitle={American Control Conference, 1993},
+year={1993},
+month={June},
+pages={2303-2304},
+abstract={In this paper, the state space partitioning in the interface of the hybrid control system is modeled using covering halfspaces; this formulation extends the model introduced in [1]. The concept of determinism is then defined and liked to controllability and observability.},
+}
+
+@INPROCEEDINGS{RODRIGUEZ03,
+title={Bringing the human arm reachable space to a virtual environment for its analysis},
+author={Rodriguez, I. and Peinado, M. and Boulic, R. and Meziat, D.},
+booktitle={Multimedia and Expo, 2003. ICME '03. Proceedings. 2003 International Conference on},
+year={2003},
+month={July},
+volume={1},
+pages={229-232},
+abstract={ Human reaching in a 3D environment is an interesting matter of research due to its application to workplace or vehicle-interior design. We introduce a 3D environment where a virtual human performs reaching tasks over 3D objects in the world. This environment also provides tools to generate and visualize reachable volumes. Reachable spaces are approximated using adjacent box-shaped voxels. We define several strategies in order to model different types of reaching, and we employ our system to construct and analyze reachable spaces for these strategies. In general, different strategies do have reachable spaces that share a common region of intersection. Therefore, goals exists that can be reached using two or more strategies. For those goals, a high-level layer is responsible for selecting the most appropriate given a certain reaching task. As a practical application, this paper presents a comparison of two usual strategies to model standing and seated reaching. The generated reach spaces show that, for each of them, a strategy is clearly more adequate than the other.},
+}
+
+@BOOK{SCHMIDT05,
+  AUTHOR =       {Schmidt, Richard A. and Lee, Timothy D.},
+  TITLE =        {Motor control and learning: a behavioral emphasis},
+  PUBLISHER =    {Human Kinetics},
+  YEAR =         {2005},
+  address =      {Champaign, IL},
+  edition =      {4th},
+  isbn =         {073604258X},
+}
+
+@ARTICLE{MACKENZIE92,
+  AUTHOR =       {MacKenzie, S. and Buxton, W.},
+  TITLE =        {Extending Fitts' Law to Two-dimensional tasks},
+  JOURNAL =      {ACM CHI},
+  YEAR =         {1992},
+  pages =        {219-226},
+}
+
+@ARTICLE{HOFFMANN94,
+  AUTHOR =       {Hoffmann, E. and Sheikh, I.},
+  TITLE =        {Effect of varying target height in a Fitts movement task},
+  JOURNAL =      {Ergonomics},
+  YEAR =         {1994},
+  volume =       {37},
+  number =       {6},
+  pages =        {1071-1088},
+}
+
+@ARTICLE{WARE94,
+  AUTHOR =       {Ware, C. and Balakrishnan, R.},
+  TITLE =        {Reaching for objects in VR displays: Lag and frame rate},
+  JOURNAL =      {ACM TOCHI},
+  YEAR =         {1994},
+  volume =       {1},
+  number =       {4},
+  pages =        {331-356},
+}
+
+@ARTICLE{WARE97,
+  AUTHOR =       {Ware, C. and Lowther, K.},
+  TITLE =        {Selection using a one-eye cursor in a fish-tank VR environment},
+  JOURNAL =      {ACM TOCHI},
+  YEAR =         {1997},
+  volume =       {4},
+  number =       {4},
+  pages =        {309-322},
+}
+
+@inproceedings{ACCOT02,
+ author = {Accot, Johnny and Zhai, Shumin},
+ title = {More than dotting the i's --- foundations for crossing-based interfaces},
+ booktitle = {Proceedings of the SIGCHI conference on Human factors in computing systems: Changing our world, changing ourselves},
+ series = {CHI '02},
+ year = {2002},
+ location = {Minneapolis, Minnesota, USA},
+ pages = {73--80},
+ numpages = {8},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Fitts' law, events, goal crossing, goal passing, graphical user interfaces, input, input performance, interaction techniques, pointing, widgets},
+}
+
+@inproceedings{ACCOT03,
+ author = {Accot, Johnny and Zhai, Shumin},
+ title = {Refining Fitts' law models for bivariate pointing},
+ booktitle = {CHI '03: Proceedings of the SIGCHI conference on Human factors in computing systems},
+ year = {2003},
+ pages = {193--200},
+ location = {Ft. Lauderdale, Florida, USA},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+@article{BUCHANAN04,
+title = "Systematic scaling of target width: dynamics, planning, and feedback",
+journal = "Neuroscience Letters",
+volume = "367",
+number = "3",
+pages = "317 - 322",
+year = "2004",
+issn = "0304-3940",
+author = "John J. Buchanan and Jin-Hoon Park and Charles H. Shea",
+abstract = "The target width of a single target in a two-target reciprocal aiming task was scaled from small (ID = 5.85) to large (ID = 2.85) and large-to-small within individual trials with movement amplitude fixed. Scaling target width produced a transition in the end-effector’s dynamics and based on a measure of movement harmonicity, the transition was sensitive to the initial conditions but not to the direction of target width scaling. Hysteresis emerged in a variety of kinematic measures suggesting that the interdependency of planning and feedback control processes was sensitive to initial conditions as well as the direction of target width scaling. Practice increased the efficiency of the reciprocal movements and produced changes in movement time and the measure of harmonic motion that revealed a tuning of the end-effector’s dynamics to cyclical motion over as large of range of IDs as possible. The tuning occurred through the modulation of time spent accelerating and decelerating the end-effector for IDs outside the range of 3.85–4.26. The results are discussed with reference to a critical ID boundary that separates regions of parameter space wherein the end-effector’s dynamics are more cyclical (limit-cycle) or discrete (fixed-point) in nature."
+}
+
+@article {BUCHANAN06,
+   author = {Buchanan, John and Park, Jin-Hoon and Shea, Charles},
+   affiliation = {Human Performance Laboratories, Department of Health and Kinesiology, Texas A&M University, College Station, TX 77843-4243, USA},
+   title = {Target width scaling in a repetitive aiming task: switching between cyclical and discrete units of action},
+   journal = {Experimental Brain Research},
+   publisher = {Springer Berlin / Heidelberg},
+   issn = {0014-4819},
+   pages = {710-725},
+   volume = {175},
+   issue = {4},
+   year = {2006}
+}
+
+@ARTICLE{GUIARD93,
+author={Guiard, Y},
+title={On Fitts's and Hooke's laws: Simple harmonic movement in upper-limb cyclical aiming},
+journal={Acta Psychologica},
+year={1993},
+volume={82},
+number={1-3},
+pages={139-159},
+affiliation={Cognitive Neuroscience Laboratory, CNRS, Marseille, France; CNRS-LNC, 31, Chemin Joseph Aiguier, 13402 Marseille Cédex 09, France},
+abstract={Can discrete, single-shot movements and continuous, cyclical movements be reduced to a single concept? In the classical, computational approach to human motor behaviour, cyclical aimed movement has generally been considered to derive from discrete primitives through a concatenation mechanism. Much importance, accordingly, has been attached to discrete-movement paradigms and to techniques allowing the segmentation of continuous data. An alternative approach, suggested by the nonlinear dynamical systems theory, views discreteness as a limiting case of cyclicity. Although attempts have been made recently to account for discrete movements in dynamical terms, cyclical paradigms have been favoured. The concatenation interpretation of cyclical aimed movement is criticized on the ground that it implies a complete waste of mechanical energy once in every half-cycle. Some kinematic data from a one-dimensional reciprocal (i.e., cyclical) aiming experiment are reported, suggesting that human subjects do save mascular efforts from one movement to the next in upper-limb cyclical aiming. The experiment demonstrated convergence on simple harmonic motion as aiming tolerance was increased, an outcome interpreted with reference to Hooke's law, in terms of the muscles' capability of storing potential, elastic energy across movement reversals. Not only is the concatenation concept problematic for understanding cyclical aimed movements, but the very reality of discrete movements is questionable too. It is pointed out that discrete motor acts of real life are composed of complete cycles, rather than half-cycles.},
+}
+
+%******************* K.A.McIsaac Haptic Paper Citations
+@incollection{TSUKADA04,
+   author = {Tsukada, Koji and Yasumura, Michiaki},
+   affiliation = {Graduate School of Media and Governance, Keio University, 5322 Endo Fujisawa, Kanagawa 252-8520 Japan},
+   title = {ActiveBelt: Belt-Type Wearable Tactile Display for Directional Navigation},
+   booktitle = {UbiComp 2004: Ubiquitous Computing},
+   series = {Lecture Notes in Computer Science},
+   editor = {Davies, Nigel and Mynatt, Elizabeth and Siio, Itiro},
+   publisher = {Springer Berlin / Heidelberg},
+   isbn = {},
+   pages = {384-399},
+   volume = {3205},
+   abstract = {In this paper we propose a novel wearable interface called  ActiveBelt  that enables users to obtain multiple directional information with the tactile sense. Since the information provided by the tactile sense is relatively unobtrusive, it is suited for daily use in mobile environments. However, many existing systems don’t transmit complex information via the tactile sense. Most of them send only simple signals, such as vibration in cellular phones. ActiveBelt is a novel belt-type wearable tactile display that can transmit directional information. We have developed prototype systems and applications, evaluated system performance and usability, and demonstrated the possibility of practical use.},
+   year = {2004}
+}
+
+@inproceedings{AMEMIYA09,
+ author = {Amemiya, Tomohiro and Sugiyama, Hisashi},
+ title = {Haptic handheld wayfinder with pseudo-attraction force for pedestrians with visual impairments},
+ booktitle = {Proceedings of the 11th international ACM SIGACCESS conference on Computers and accessibility},
+ series = {Assets '09},
+ year = {2009},
+ isbn = {978-1-60558-558-1},
+ location = {Pittsburgh, Pennsylvania, USA},
+ pages = {107--114},
+ numpages = {8},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {asymmetric oscillation, maze task, wayfinding},
+}
+
+@ARTICLE{KIMY09,
+author={Kim, Y and Cha, J and Oakley, I and Ryu, J},
+journal={Multimedia, IEEE},
+title={Exploring Tactile Movies: An Initial Tactile Glove Design and Concept Evaluation},
+year={2009},
+month= ,
+volume={PP},
+number={99},
+pages={1},
+keywords={},
+doi={10.1109/MMUL.2009.63},
+ISSN={1070-986X},
+}
+
+@incollection {PEILOT10,
+   author = {Pielot, Martin and Boll, Susanne},
+   affiliation = {OFFIS Institute for Information Technology Germany},
+   title = {&lt;i&gt;Tactile Wayfinder&lt;/i&gt;: Comparison of Tactile Waypoint Navigation with Commercial Pedestrian Navigation Systems},
+   booktitle = {Pervasive Computing},
+   series = {Lecture Notes in Computer Science},
+   editor = {Floréen, Patrik and Krüger, Antonio and Spasojevic, Mirjana},
+   publisher = {Springer Berlin / Heidelberg},
+   isbn = {},
+   pages = {76-93},
+   volume = {6030},
+   url = {http://dx.doi.org/10.1007/978-3-642-12654-3_5},
+   note = {10.1007/978-3-642-12654-3_5},
+   abstract = {In this paper we report on a field study comparing a commercial pedestrian navigation system to a tactile navigation system called Tactile Wayfinder. Similar to previous approaches the Tactile Wayfinder uses a tactile torso display to present the directions of a route’s waypoints to the user. It advances those approaches by conveying the location of the next two waypoints rather than the next one only, so the user already knows how the route continues when reaching a waypoint. Using a within-subjects design, fourteen participants navigated along two routes in a busy city centre with the Tactile Wayfinder and a commercial pedestrian navigation system. We measured the acquisition of spatial knowledge, the level of attention the participants had to devote to the navigation task, and the navigation performance. We found that the Tactile Wayfinder freed the participants’ attention but could not keep up with the navigation system in terms of navigation performance. No significant difference was found in the acquisition of spatial knowledge. Instead, a good general sense of direction was highly correlated with good spatial knowledge acquisition and a good navigation performance.},
+   year = {2010},
+}
+
+@INPROCEEDINGS{SEO10,
+author={Jongman Seo and Seungmoon Choi},
+booktitle={Haptics Symposium, 2010 IEEE},
+title={Initial study for creating linearly moving vibrotactile sensation on mobile device},
+year={2010},
+month=march,
+volume={},
+number={},
+pages={67 -70},
+abstract={This paper investigates the feasibility of creating spatially moving vibrotactile sensations using two vibrotactile actuators in a mobile device. The idea is based on well-known tactile illusions of apparent tactile motion and Â¿phantomÂ¿ sensation. The phantom sensation refers to a perceptual phenomenon where spatially separated vibrotactile actuators that stimulate different skin zones induce a single tactile sensation midway between the two stimulation points. We tested whether such sensation can also be elicited in a mobile device via a psychophysical experiment that employed an open response paradigm. Experimental conditions differed in vibration rendering method, signal duration, and sensation movement direction. The subjects answered the perceived positions and intensities of vibrotactile sensations by drawing graphs with respect to time. The results demonstrated that such Â¿vibrotactile flowÂ¿ can be reliably produced in a mobile device and that a performance trade-off exists depending on the method and signal duration used for rendering. The findings of this paper can be applied to the user interface design of a mobile device with enriched vibrotactile sensations and an improved information transfer bandwidth.},
+keywords={drawing graph;linearly moving vibrotactile sensation;mobile device;open response paradigm;phantom sensation;psychophysical experiment;sensation movement direction;tactile motion;user interface design;vibration rendering method;vibrotactile actuator;actuators;haptic interfaces;mobile handsets;notebook computers;tactile sensors;touch (physiological);user interfaces;vibrations;},
+doi={10.1109/HAPTIC.2010.5444677},
+ISSN={},
+}
+
+@ARTICLE{KATSURA04,
+author={Katsura, S. and Ohnishi, K.},
+journal={Industrial Electronics, IEEE Transactions on},
+title={Human cooperative wheelchair for haptic interaction based on dual compliance control},
+year={2004},
+month=feb.,
+volume={51},
+number={1},
+pages={ 221 - 228},
+abstract={ A human and a robot will carry out a task which is not attainable by themselves. In particular, a human recognizes environment and plans his trajectory without collision with obstacles. On the other hand, a robot generates a controlled force more than a human. In this paper, the best combination of human ability and robot capacity is considered. Based on force commands from a human, a robot supports it A reaction torque observer is implemented in a robot to observe an environmental disturbance. Environmental disturbance is classified into translational and rotational direction modes. As a result, adaptive force control in each mode is attained. Dual compliance control is applied to a wheelchair. A wheelchair that has the abilities of power-assist and relaxation of contact force is developed in this paper. As a result, operationality and stability are improved. The numerical and experimental results show the viability of the proposed method.},
+keywords={ adaptive force control; autonomous robots; contact force relaxation; disturbance observer; dual compliance control; environmental disturbance; friction coefficient; haptic interaction; human ability; human cooperative wheelchair; human-robot interaction; obstacle avoidance; operationality; power-assist; reaction torque observer; robot capacity; robot kinematics; rotational direction modes; sensorless force control; stability; translational direction modes; adaptive control; collision avoidance; compliance control; force control; force sensors; handicapped aids; haptic interfaces; intelligent robots; man-machine systems; medical robotics; mobile robots; robot kinematics;},
+doi={10.1109/TIE.2003.821890},
+ISSN={0278-0046},
+}
+
+@inproceedings{PARKJH09,
+ author = {Park, Jun-Hyung and Lee, Hyun Suk and Jeong, Ju Seok and Jang, Tae-Jeong},
+ title = {Realization of a vibro-tactile glove type mouse},
+ booktitle = {Proceedings of the 16th ACM Symposium on Virtual Reality Software and Technology},
+ series = {VRST '09},
+ year = {2009},
+ isbn = {978-1-60558-869-8},
+ location = {Kyoto, Japan},
+ pages = {255--256},
+ numpages = {2},
+ url = {http://doi.acm.org/10.1145/1643928.1643992},
+ doi = {http://doi.acm.org/10.1145/1643928.1643992},
+ acmid = {1643992},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {HID (human interface device), glove type mouse, haptics, vibro-tactile display},
+}
+
+@INPROCEEDINGS{PHONGPHAM09,
+author={Phong Pham, H. and Chellali, R.},
+booktitle={Space Mission Challenges for Information Technology, 2009. SMC-IT 2009. Third IEEE International Conference on},
+title={Frequency Modulation Based Vibrotactile Device for Teleoperation},
+year={2009},
+month=july,
+volume={},
+number={},
+pages={98 -105},
+abstract={This study investigated how people achieve pointing and path following tasks using a vibrotactile device. In pointing tasks, subjects are asked to reach a target as fast as possible guided by two types of tactile information generated by a specific glove we developed. The first type of information is a constant vibrating stimulation and the second one is a frequency modulation based vibration. A comparison using the visual channel when performing the same task is done is presented. For each modality, two experiments were performed. The first one is 1D: the subjects reach a target situated on a line. The second one is 2D and the target is in the horizontal plane. The results we obtained showed that tactile based pointing tasks obey to the classical Fitts' law. Furthermore, we show that the frequency modulation based vibration mode is more useful than the constant one for pointing tasks. In path following experiments, we have a comparison between global and local visual feedback. Results show that in case of lacking global spatial information, vibrotactile feedback can give similar performance as visual feedback.},
+keywords={classical Fitts' law;frequency modulation;glove;path following task;spatial information;tactile based pointing task;tactile information;teleoperation;vibrating stimulation;vibrotactile device;vibrotactile feedback;visual channel;visual feedback;data gloves;feedback;position control;telecontrol;vibrations;},
+doi={10.1109/SMC-IT.2009.20},
+ISSN={},
+}
+
+@INPROCEEDINGS{PHONGPHAM09b,
+author={Pham, H.P. and Chellali, R. and Ammi, M. and Fontaine, J.-G.},
+booktitle={Robot and Human Interactive Communication, 2009. RO-MAN 2009. The 18th IEEE International Symposium on},
+title={Frequency modulation based vibrotactile feedback for 1-D and 2-D pointing tasks in virtual reality},
+year={2009},
+month={27 2009-oct. 2},
+volume={},
+number={},
+pages={1099 -1105},
+abstract={This study investigated how people achieve pointing tasks using a vibrotactile device. A comparison using visual feedback when doing the same task is presented. Subjects were asked to reach a target as fast and as precise as possible guided by visual information from an LCD screen; and two types of tactile information generated by a specific glove we developed. The first type of tactile information was a constant vibrating stimulation and the second one was a frequency modulation based vibration. For each modality, two experiments were performed. The first one was in 1-D: reaching a target situated on a horizontal left-right line. The second one was in 2-D: reaching a target is in a horizontal plane. The results we obtained showed that tactile based pointing task obey to the classical the Fitts' law. Furthermore, results showed that frequency modulation based vibrating gave better performance in trajectory length, but not in time of execution.},
+keywords={1D pointing task;2D pointing task;constant vibrating stimulation;frequency modulation based vibration;tactile information;vibrotactile device;virtual reality;visual feedback;frequency modulation;haptic interfaces;virtual reality;},
+doi={10.1109/ROMAN.2009.5326207},
+ISSN={1944-9445},
+}
+
+
+@ARTICLE{ORON-GILAD07,
+author={Oron-Gilad, T. and Downs, J.L. and Gilson, R.D. and Hancock, P.A.},
+journal={Systems, Man, and Cybernetics, Part C: Applications and Reviews, IEEE Transactions on},
+title={Vibrotactile Guidance Cues for Target Acquisition},
+year={2007},
+month=sept. ,
+volume={37},
+number={5},
+pages={993 -1004},
+keywords={cross-modal interference;fine cursor control;position guidance;stabilization;target acquisition;vibrotactile guidance cues;vibrotactile stimulation;haptic interfaces;military systems;position control;},
+doi={10.1109/TSMCC.2007.900646},
+ISSN={1094-6977},
+}
+
+@INCOLLECTION{BRAYDA10,
+   author = {Brayda, Luca and Campus, Claudio and Chellali, Ryad and Rodriguez, Guido},
+   affiliation = {Human Robots Mediated Interactions lab., Telerobotics and Applications dept., Italian Institute of Technology, Via Morego 30, Genova, Italy},
+   title = {Objective Evaluation of Spatial Information Acquisition Using a Visuo-tactile Sensory Substitution Device},
+   booktitle = {Social Robotics},
+   series = {Lecture Notes in Computer Science},
+   editor = {Ge, Shuzhi and Li, Haizhou and Cabibihan, John-John and Tan, Yeow},
+   publisher = {Springer Berlin / Heidelberg},
+   isbn = {},
+   pages = {315-324},
+   volume = {6414},
+   url = {http://dx.doi.org/10.1007/978-3-642-17248-9_33},
+   note = {10.1007/978-3-642-17248-9_33},
+   abstract = {This paper proposes a method to objectively assess the degree of sensory transfer in a visuo-tactile Sensory Substitution task. Using a special purpose single taxel-based device, users discover with tact some virtual objects of increasing geometrical complexity, while EEG signals are recorded. Successful reconstruction, as well as cognitive load and brain programming, are found to be associated with relative activation/deactivation of specific EEG bands, and to the users’ exploration strategies, which allows us to objectively assess the perceived degree of complexity of the reconstruction task. Our metrics also provide an evaluation tool for the design of devices useful for the navigation of visually impaired people.},
+   year = {2010},
+}
+
+@Article{PRIPLATA02,
+  title = {Noise-Enhanced Human Balance Control},
+  author = {Priplata, Attila  and Niemi, James  and Salen, Martin  and Harry, Jason  and Lipsitz, Lewis A. and Collins, J. J.},
+  journal = {Phys. Rev. Lett.},
+  volume = {89},
+  number = {23},
+  pages = {238101},
+  numpages = {4},
+  year = {2002},
+  month = {Nov},
+  doi = {10.1103/PhysRevLett.89.238101},
+  publisher = {American Physical Society}
+}
+
+@ARTICLE{AKAMATSU96,
+  AUTHOR =       {Akamatsu, M. and MacKenzie, I. S.},
+  TITLE =        {Movement characteristics using a mouse with tactile and force feedback},
+  JOURNAL =      {Int. J. Human-Computer Studies},
+  YEAR =         {1996},
+  volume =       {45},
+  number =       {},
+  pages =        {483-493},
+}
+
+@article{AKAMATSU94,
+title = {A multi-modal mouse with tactile and force feedback},
+journal = {International Journal of Human-Computer Studies},
+volume = {40},
+number = {3},
+pages = {443 - 453},
+year = {1994},
+issn = {1071-5819},
+doi = {DOI: 10.1006/ijhc.1994.1020},
+}
+
+@article{SHERRICK85,
+author = {Carl E. Sherrick},
+title = {A scale for rate of tactual vibration},
+publisher = {ASA},
+year = {1985},
+journal = {The Journal of the Acoustical Society of America},
+volume = {78},
+number = {1},
+pages = {78-83},
+url = {http://link.aip.org/link/?JAS/78/78/1},
+doi = {10.1121/1.392457},
+}
+
+@article{SUMMERS97,
+author = {Ian R. Summers and Philip G. Cooper and Paul Wright and Denise A. Gratton and Peter Milnes and Brian H. Brown},
+title = {Information from time-varying vibrotactile stimuli},
+publisher = {ASA},
+year = {1997},
+journal = {The Journal of the Acoustical Society of America},
+volume = {102},
+number = {6},
+pages = {3686-3696},
+keywords = {mechanoception; handicapped aids},
+url = {http://link.aip.org/link/?JAS/102/3686/1},
+doi = {10.1121/1.420154},
+}
+
+@article{CARLTON81,
+title = {Processing visual feedback information for movement control},
+journal = {Journal of Experimental Psychology: Human Perception and Performance},
+volume = {7},
+number = {5},
+pages = {1019 - 1030},
+year = {1981},
+issn = {0096-1523},
+doi = {DOI: 10.1037/0096-1523.7.5.1019},
+url = {http://www.sciencedirect.com/science/article/B6X08-4NSX3SB-B/2/5afc0bc1f71d4c9710f5ea272a4dcf86},
+author = {Les G. Carlton},
+keywords = {time needed for processing of visual feedback &},
+keywords = {error information, control of aimed movements, college students},
+abstract = {Investigated the time needed to process visual feedback information for the control of aimed movements. Exp I (11 undergraduates) demonstrated that withdrawing visual feedback information from the initial portions of aiming responses has little effect on movement outcome. This finding suggested that visual processing times may be faster than previous estimates. The vision manipulation paradigm employed in Exp I was combined with high-speed cinematography techniques in Exp II (3 Ss) to obtain a direct estimate of visual processing time. Examination of movement patterns indicated that the average time between the presentation of visual error information and the initiation of a movement correction was 135 msec. Findings support the contention that the time needed to process visual error information and to use this information for movement control is shorter than previous estimates of 190-300 msec. (23 ref) (PsycINFO Database Record (c) 2006 APA, all rights reserved)},
+}
+
+@ARTICLE{FRIBERG95,
+  AUTHOR =       {A. Friberg and J. Sundberg},
+  TITLE =        {Time discrimination in a monotonic isochronous sequence},
+  JOURNAL =      {J. Acoust. Soc. Amer.},
+  YEAR =         {1995},
+  volume =       {98},
+  number =       {5},
+  pages =        {2524-2531},
+}
+
+@ARTICLE{DRAKE93,
+  AUTHOR =       {C. Drake and M. Botte},
+  TITLE =        {Tempo sensitivity in auditory sequences: Evidence for a multiple-look model},
+  JOURNAL =      {Precept. Psychophys.},
+  YEAR =         {1993},
+  volume =       {54},
+  number =       {3},
+  pages =        {277-286},
+}
+
+@ARTICLE{ORBAN85,
+  AUTHOR =       {G. Orban and F. Van Calenbergh and B. De Bruyn and H. Males},
+  TITLE =        {Velocity discrimination in central and peripheral visual field},
+  JOURNAL =      {J. Opt. Soc. Amer. A, Opt. Image Sci.},
+  YEAR =         {1985},
+  volume =       {2},
+  number =       {11},
+  pages =        {1836-1847},
+}
+
+@ARTICLE{STEVENS59,
+  AUTHOR =       {S. Stevens},
+  TITLE =        {Tactile vibration: Dynamics of sensory intensity},
+  JOURNAL =      {Journal of Experimental Psychology},
+  YEAR =         {1959},
+  volume =       {57},
+  pages =        {210-218},
+}
+
+@ARTICLE{MOWBRAY55,
+  AUTHOR =       {G. Mowbray and J. Gebhard},
+  TITLE =        {Differential sensitivity of the eye to intermittent white light},
+  JOURNAL =      {Science},
+  YEAR =         {1955},
+  volume =       {121},
+  pages =        {173-175},
+}
+
+@ARTICLE{KOUTSOUKOS00,
+author={Koutsoukos, X.D. and Antsaklis, P.J. and Stiver, J.A. and Lemmon, M.D.},
+journal={Proceedings of the IEEE},
+title={Supervisory control of hybrid systems},
+year={2000},
+month={jul},
+volume={88},
+number={7},
+pages={1026 -1049},
+abstract={In this paper, the supervisory control of hybrid systems is introduced and discussed at length. Such control systems typically arise in the computer control of continuous processes, for example, in manufacturing and chemical processes, in transportation systems, and in communication networks. A functional architecture of hybrid control systems consisting of a continuous plant, a discrete-event controller, and an interface is used to introduce and describe analysis and synthesis concepts and approaches. Our approach highlights the interaction between the continuous and discrete dynamics, which is the cornerstone of any hybrid system study. Discrete abstractions are used to approximate the continuous plant. Properties of the discrete abstractions to be appropriate representations of the continuous plant are presented, and important concepts such as determinism and controllability are discussed. Supervisory control design methodologies are presented to satisfy control specifications described by formal languages. Several examples are used throughout the paper to illustrate our approach},
+keywords={chemical processes;communication networks;computer control;continuous plant;continuous processes;control specifications;controllability;determinism;discrete-event controller;formal languages;functional architecture;hybrid control systems;hybrid systems;interface;manufacturing processes;supervisory control design methodologies;transportation systems;computerised control;control system analysis;control system synthesis;controllability;discrete event systems;},
+doi={10.1109/5.871307},
+ISSN={0018-9219},
+}
+
+%******************* Arm movement paper citations Begin **********************
+@Article{YANG05,
+language = {English},
+copyright = {Copyright 2005, IEE},
+title = {An algorithm for simulating human arm movement considering the comfort level},
+journal = {Simulation Modelling Practice and Theory},
+journal = {Simul. Modelling Pract. Theory (Netherlands)},
+author = {Feng Yang and Li Ding and Chunxin Yang and Xiugan Yuan},
+volume = { 13},
+number = { 5},
+year = {2005},
+pages = {437 - 49},
+issn = {1569-190X},
+abstract = {Seeking other joint trajectories of human arm in terms of given trajectory of hand is a wide research problem. In this paper, the computational problem of inverse kinematics of arm movement was investigated. On the basis of an eight-DOF arm model, an inverse kinematics algorithm recreating arm motion was developed in accordance with the human's feedback control mechanism of motor. In this method, the comfort level, an ergonomic index was adopted as the performance function of the motor control. Through maximizing the comfort level, human arm movement can be simulated when the end-effector motion is given. This method combines human dynamics and ergonomics. To evaluate the approach, some arm goal-directed movement experiments were carried out. The joint trajectories were predicted with an average R<sup>2</sup>=0.9627 and mean residual error MRE=0.0094 m, which indicates that the presented algorithm provides a feasible method to simulate arm goal-directed movement and can be used as an efficient postural manipulation tool for the virtual reality. [All rights reserved Elsevier]},
+keywords = {end effectors;ergonomics;feedback;manipulator kinematics;virtual reality;},
+note = {human arm movement simulation;inverse kinematics;feedback control mechanism;ergonomic index;motor control;end effector motion;mean residual error;virtual reality;},
+URL = {http://dx.doi.org/10.1016/j.simpat.2004.12.004},
+}
+
+@Article{HUANG00 ,
+language = {English},
+copyright = {Copyright 2000, IEE},
+title = {Human motion planning based on recursive dynamics and optimal control techniques},
+journal = {Proceedings Computer Graphics International 2000},
+author = {Huang, G. and Metaxas, D. and Lo, J.},
+year = {2000},
+pages = {19 - 28},
+address = {Geneva, Switzerland},
+abstract = {The 3D simulation of human activity based on physics, kinematics, and dynamics in terrestrial and space environments, is becoming increasingly important. Virtual humans may be used to design tasks in terrestrial environments and analyze their physical workload to maximize success and safety without expensive physical mockups. Previously (J. Lo and D. Metaxas, 1999), we presented an efficient optimal control and recursive dynamics based animation system for simulating and controlling the motion of articulated figures, and implemented the approach to several experiments where the simplified articulated models which has serial/closed-loop chain structures with only small degree-of-freedom (less than seven) each. The computation time is from a few minutes up to 4 hours based on the complexity of the model and how close the initial guess of the motion trajectory is to the optimal solution. The paper presents an improved method which can deal with more complicated kinematic chains (tree structures), as well as larger degree-of-freedom serial/closed-loop chain structures. Motion planning is done by first solving the inverse kinematic problem to generate possible trajectories, which gives us a better initial guess of the motion trajectory than the previous one, and then by solving the resulting nonlinear optimal control problem. For example, minimization of the torques during a simulation under certain constraints is often applied and has its origin in the biomechanics literature. Examples of activities shown are chinup and dipdown in different terrestrial environments as well as zero-gravity self orientation and ladder traversal},
+keywords = {closed loop systems;computer animation;digital simulation;kinematics;optimal control;path planning;tree data structures;},
+note = {LATEX human motion planning;recursive dynamics;optimal control techniques;3D simulation;human activity;kinematics;space environments;virtual reality;virtual humans;terrestrial environments;optimal control;recursive dynamics based animation system;articulated figures;simplified articulated models;serial/closed-loop chain structures;computation time;initial guess;motion trajectory;optimal solution;kinematic chains;tree structures;inverse kinematic problem;nonlinear optimal control problem;torque minimization;biomechanics;chinup;dipdown;zero-gravity self orientation;ladder traversal;},
+URL = {http://dx.doi.org/10.1109/CGI.2000.852316},
+}
+
+@article{SABES00,
+title = "The planning and control of reaching movements",
+journal = "Current Opinion in Neurobiology",
+volume = "10",
+number = "6",
+pages = "740 - 746",
+year = "2000",
+note = "",
+issn = "0959-4388",
+doi = "10.1016/S0959-4388(00)00149-5",
+url = "http://www.sciencedirect.com/science/article/pii/S0959438800001495",
+author = "Philip N and Sabes",
+keywords = "mothor control",
+keywords = "arm",
+keywords = "movement",
+keywords = "reach",
+keywords = "feedback",
+keywords = "planning",
+keywords = "motor learning",
+keywords = "adaptation",
+keywords = "internal models",
+keywords = "vision",
+abstract = "The notion of internal models has become central to the study of visually guided reaching. Armed with this theoretical framework, researchers are gleaning insights into long-standing problems in the field, such as the ability to respond rapidly to changes in the location of a reach target and the fine control of the multi-joint dynamics of the arm. A key factor in these advances is our increased understanding of how the brain integrates feedforward control signals, sensory feedback, and predictions based on internal models of the arm."
+}
+
+@ARTICLE{JORDAN92,
+  AUTHOR =       {Jordan, M.I. and Rumelhart, D.E.},
+  TITLE =        {Forward models - supervised learning with a distal teacher},
+  JOURNAL =      {Cognitive Science},
+  YEAR =         {1992},
+  volume =       {16},
+  pages =        {410-416},
+}
+
+@ARTICLE{WOLPERT95,
+  AUTHOR =       {Wolpert, D.M. and Ghahramani, Z. and Jordan, M.I.},
+  TITLE =        {An internal model for sensorimotor integration},
+  JOURNAL =      {Science},
+  YEAR =         {1995},
+  volume =       {269},
+  pages =        {1880-1882},
+}
+
+@ARTICLE{WOLPERT98,
+  AUTHOR =       {Wolpert, D.M. and Kawato, M.},
+  TITLE =        {Multiple paired forward and inverse models for motor control},
+  JOURNAL =      {Neural Networks},
+  YEAR =         {1998},
+  volume =       {11},
+  pages =        {1317-1329},
+}
+
+@article{WOLPERT97,
+title = "Computational approaches to motor control",
+journal = "Trends in Cognitive Sciences",
+volume = "1",
+number = "6",
+pages = "209 - 216",
+year = "1997",
+note = "",
+issn = "1364-6613",
+doi = "10.1016/S1364-6613(97)01070-X",
+url = "http://www.sciencedirect.com/science/article/pii/S136466139701070X",
+author = "Wolpert, Daniel M.",
+abstract = "This review will focus on four areas of motor control which have recently been enriched both by neural network and control system models: motor planning, motor prediction, state estimation and motor learning. We will review the computational foundations of each of these concepts and present specific models which have been tested by psychophysical experiments. We will cover the topics of optimal control for motor planning, forward models for motor prediction, observer models of state estimation arid modular decomposition in motor learning. The aim of this review is to demonstrate how computational approaches, as well as proposing specific models, provide a theoretical framework to formalize the issues in motor control."
+}
+
+@ARTICLE{KAWATO99,
+  AUTHOR =       {Kawato, M.},
+  TITLE =        {Internal models for motor control and trajectory planning},
+  JOURNAL =      {Current Opinion in Neurobiology},
+  YEAR =         {1999},
+  volume =       {9},
+  pages =        {718-727},
+}
+
+@ARTICLE{DESMURGET99,
+  AUTHOR =       {DESMURGET, M. and Epstein, C.M. and Turner, R.S. and Prablanc, C. Alexander, G.E. and Grafton, S.T.},
+  TITLE =        {Role of the posterior parietal cortex in updating reaching movements to a visual target},
+  JOURNAL =      {Nature: Neuroscience},
+  YEAR =         {1999},
+  volume =       {2},
+  pages =        {563-567},
+}
+
+@ARTICLE{DESMURGET97,
+  AUTHOR =       {Desmurget, M. and Rossetti, Y. and Jordan, M. and Meckler, C. and Prablanc, C.},
+  TITLE =        {Viewing the hand prior to movement improves accuracy of pointing performed towards the unseen contralateral hand},
+  JOURNAL =      {Experimental Brain Research},
+  YEAR =         {1997},
+  volume =       {115},
+  pages =        {180-186},
+}
+
+@ARTICLE{GOODBODY99,
+  AUTHOR =       {Goodbody, S.J. and Wolpert, D.M.},
+  TITLE =        {The effect of visumotor displacements on arm movment paths},
+  JOURNAL =      {Experimental Brain Research},
+  YEAR =         {1999},
+  volume =       {127},
+  pages =        {213-223},
+}
+
+
+@article {BURDET06,
+   author = {Burdet, E. and Tee, K. and Mareels, I. and Milner, T. and Chew, C. and Franklin, D. and Osu, R. and Kawato, M.},
+   affiliation = {Department of Mechanical Engineering, National University of Singapore, 10 Kent Ridge Crescent, Singapore, 119260 Singapore},
+   title = {Stability and motor adaptation in human arm movements},
+   journal = {Biological Cybernetics},
+   publisher = {Springer Berlin / Heidelberg},
+   issn = {0340-1200},
+   keyword = {Biomedical and Life Sciences},
+   pages = {20-32},
+   volume = {94},
+   issue = {1},
+   abstract = {In control, stability captures the reproducibility of motions and the robustness to environmental and internal perturbations. This paper examines how stability can be evaluated in human movements, and possible mechanisms by which humans ensure stability. First, a measure of stability is introduced, which is simple to apply to human movements and corresponds to Lyapunov exponents. Its application to real data shows that it is able to distinguish effectively between stable and unstable dynamics. A computational model is then used to investigate stability in human arm movements, which takes into account motor output variability and computes the force to perform a task according to an inverse dynamics model. Simulation results suggest that even a large time delay does not affect movement stability as long as the reflex feedback is small relative to muscle elasticity. Simulations are also used to demonstrate that existing learning schemes, using a monotonic antisymmetric update law, cannot compensate for unstable dynamics. An impedance compensation algorithm is introduced to learn unstable dynamics, which produces similar adaptation responses to those found in experiments.},
+   year = {2006}
+}
+
+@MASTERSTHESIS{SOUNGYEE08,
+author={Soung Yee,Anthony},
+year={2008},
+title={An investigation of the effect of display augmentation with instantaneous movement information on telemanipulation performance under visual-motor mismatch},
+school={University of Toronto},
+abstract={A review is presented of the well documented difficulties in performing manual control tasks under visual-motor mismatch. In that light, a new display concept is proposed, where additional visual information about a telemanipulated instruments direction of instantaneous movement is graphically superimposed at the instrument tips location in a camera image. An experimental platform is developed to evaluate the new display concept in a pointing task, under various camera misalignments and path constraints. Both global and dynamic measures are used to evaluate recorded movement trajectories, including a novel analysis of distributions of bivariate time and space domain parameters. The reported performance decrement is consistent with the literature; however, the global and dynamic measures analyses suggest that the proposed display concept offered no significant improvement over the case of no additional visual information in the experiment reported.},
+keywords={Industrial engineering},
+isbn={9780494389416},
+url={http://search.proquest.com/docview/304342348?accountid=15115},
+}
+
+@article{KALASKA91,
+title = "Reaching movements to visual targets: neuronal representations of sensori-motor transformations",
+journal = "Seminars in Neuroscience",
+volume = "3",
+number = "1",
+pages = "67 - 80",
+year = "1991",
+issn = "1044-5765",
+author = "Kalaska, J.",
+abstract = "Reaching movements can be described in many different coordinate frameworks, from the path of the hand through space, to the patterns of causative muscle contractions. It is logical, therefore, to propose that the brain contains representations of reaching movements in each of these reference frames, and controls movement by making serial transformations of movement-related signals among the coordinate frameworks. The transformation from the desired kinematic parameters of movement (direction, velocity, amplitude, etc) to the requisite parameters of movement dynamics (forces, torques, muscle activity) is a particularly complex problem in the skeletomotor system. Although our understanding of motor control processes is advancing rapidly, there is still surprisingly little conclusive evidence concerning the neuronal mechanisms of this serial hierarchical model for the planning of reaching movements. Parallel-processing mechanisms are also likely to be very important."
+}
+
+@BOOK{BERNSTEIN67,
+  AUTHOR =       {Bernstein, N.},
+  TITLE =        {The co-ordination and regulation of movements},
+  PUBLISHER =    {Pergamon Press},
+  YEAR =         {1967},
+  address =      {Oxford},
+}
+
+@INBOOK{HILDRETH87,
+  AUTHOR =       {Hildreth, E.C and Hollerbach, J.M.},
+  editor =       {Plum, F.},
+  TITLE =        {Handbook of Physiology},
+  CHAPTER =      {Artificial intelligence: computational approach to vision and motor control},
+  YEAR =         {1987},
+  volume =       {5},
+  number =       {1},
+  pages =        {605-642},
+  publisher =    {Williams and Wilkins},
+  address =      {Baltimore},
+}
+
+@ARTICLE{HOGAN88,
+  AUTHOR =       {Hogan, N.},
+  TITLE =        {Planning and execution of multijoint movements},
+  JOURNAL =      {Canadian Journal of Physiology and Pharmacology},
+  YEAR =         {1988},
+  volume =       {66},
+  pages =        {508-517},
+}
+
+@INPROCEEDINGS{PIERRE02,
+author={Pierre, M.C. and Kirsch, R.F.},
+booktitle={Engineering in Medicine and Biology, 2002. 24th Annual Conference and the Annual Fall Meeting of the Biomedical Engineering Society EMBS/BMES Conference, 2002. Proceedings of the Second Joint}, title={Measuring dynamic characteristics of the human arm in three dimensional space},
+year={2002},
+month={oct.},
+volume={3},
+pages={2558 - 2560},
+abstract={ This work describes a method to measure the three-dimensional dynamic characteristics of the human arm. Endpoint dynamics, which characterizes the relationship between hand displacements and resulting forces, was estimated during the application of three-dimensional stochastic displacement perturbations applied to the endpoint of the arm. The dynamic input-output relations between the displacements and the forces were determined using a frequency domain nonparametric system identification technique. Endpoint inertia, viscosity and stiffness parameters were fit to the identified system. A graphical technique was introduced to help visualize these complex dynamic parameters. The results illustrate the importance of studying the endpoint dynamics in three dimensions.},
+keywords={ dynamic characteristics measurement; dynamic input-output relations; endpoint dynamics; endpoint inertia; endpoint stiffness; graphical technique; human arm; identified system; inherent musculo-skeletal properties; neuromuscular interactions; skeletal geometry; stiffness parameters; system identification; three dimensional space; biomechanics; biomedical measurement; elasticity; identification; viscosity;},
+doi={10.1109/IEMBS.2002.1053425},
+ISSN={1094-687X},
+}
+
+@inproceedings{GONCLAVES95,
+language = {English},
+copyright = {Copyright 1995, IEE},
+title = {Monocular tracking of the human arm in 3D},
+journal = {Proceedings. Fifth International Conference on Computer Vision (Cat. No.95CB35744)},
+author = {Goncalves, L. and Di Bernardo, E. and Ursella, E. and Perona, P.},
+year = {1995},
+pages = {764 - 70},
+address = {Los Alamitos, CA, USA},
+abstract = {We address the problem of estimating the position and motion of a human arm in 3D without any constraints on its behavior and without the use of special markers. We model the arm as two truncated right-circular cones connected with spherical joints. We propose to use a recursive estimator for arm position, and to provide the estimator with error signals obtained by comparing the projected estimated arm position with that of the actual arm in the image. The system is demonstrated and tested on a real image sequence},
+keywords = {computer animation;motion estimation;position control;virtual reality;},
+note = {monocular tracking;human arm;position estimation;motion estimation;truncated right-circular cones;error signals;3D real image sequence;},
+URL = {http://dx.doi.org/10.1109/ICCV.1995.466861},
+}
+
+@inproceedings{LUO04,
+language = {English},
+copyright = {Copyright 2006, IEE},
+title = {On optimality of human arm movements},
+journal = {Proceedings. 2004 IEEE International Conference on Robotics and Biomimetics (IEEE Cat. No. 04EX911)},
+author = {Zhiwei Luo and Svinin, M. and Ken Ohta and Odashima, T. and Hosoe, S.},
+year = {2004},
+pages = {256 - 61},
+address = {Piscataway, NJ, USA},
+abstract = {There are many tasks that requires us to interact with physical environment, such as opening a door, turning a steering wheel, rotating a coffee mill, et al.. In these tasks, the arm is usually constrained to the environmental geometry. Although there are infinite possibilities for human subject to select his/her arm trajectories as well as interacting forces when performing the tasks, experiments of human constrained motion however show that there clearly exist some characteristics inherent in all measurement data. Specifically, in this research, it is shown that, when human rotating a crank, he/she optimizes the criterion that minimizes the change of both the end-effector force as well as the muscle forces. This numerical result is strongly supported by human experiments data. Since this criterion is different from the minimum torque change criterion proposed to evaluate human reaching movement in free motion space, it is then suggested that human may use different optimal strategies with respect to different task requirements as well as environmental conditions},
+keywords = {biomechanics;end effectors;man-machine systems;motion control;optimal control;},
+note = {human arm movements;environmental geometry;arm trajectory;human constrained motion;end-effector force;muscle forces;minimum torque change criterion;human reaching movement;crank rotation;optimal trajectory;},
+}
+
+@inproceedings{ZHOU06,
+language = {English},
+copyright = {Copyright 2006, The Institution of Engineering and Technology},
+title = {Inertial motion tracking of human arm movements in stroke rehabilitation},
+journal = {2005 IEEE International Conference on Mechatronics and Automation (IEEE Cat. No. 05EX1044)},
+author = {Huiyu Zhou and Huosheng Hu},
+volume = {Vol. 3},
+year = {2005},
+pages = {1306 - 11},
+address = {Piscataway, NJ, USA},
+abstract = {We present a real-time monitoring system for measuring human upper limb movements in post-stroke rehabilitation. It is based on an advanced inertial sensor MT9 that is commercially available. Human upper limb motion is represented by a kinematic chain in which there are six joint variables to be considered: three for the shoulder and the others for the elbow. Kinematic models are built to study human upper limb motion in three-dimension, based on measurements of the wrist motion. A simulated annealing based optimisation method is adopted to reduce errors in measurements. Experimental results demonstrate the favorable performance of the proposed system in real motion circumstances},
+keywords = {inertial systems;measurement errors;medical computing;patient monitoring;patient rehabilitation;sensors;simulated annealing;},
+note = {inertial motion tracking;human arm movements;post-stroke rehabilitation;real-time monitoring system;human upper limb movement measurement;advanced inertial sensor MT9;kinematic chain;joint variables;kinematic models;wrist motion;simulated annealing;optimisation method;measurement error reduction;},
+}
+
+@ARTICLE{GIELEN97,
+  AUTHOR =       {GIELEN, C.C.A.M. and VRIJENHOEK, E.J. T. FLASH,2 AND S.F.W. NEGGERS1},
+  TITLE =        {Arm Position Constraints During Pointing and Reaching in 3D Space},
+  JOURNAL =      {Journal of Neurophysiology},
+  YEAR =         {1997},
+  volume =       {78},
+  number =       {2},
+  pages =        {660-673},
+  month =        {Aug},
+}
+
+@ARTICLE{ADMIRAAL04,
+  AUTHOR =       {Admiraal, Marjan A. and  Kusters, Martijn J.M.A.M. and Gielen, Stan C.A.M.},
+  TITLE =        {Modeling Kinematics and Dynamics of Human Arm Movements},
+  JOURNAL =      {Motor Control},
+  YEAR =         {2004},
+  volume =       {8},
+  number =       {3},
+  pages =        {312-338},
+  month =        {Jul},
+}
+
+@article{MIALL96,
+title = {Forward Models for Physiological Motor Control},
+journal = {Neural Networks},
+volume = {9},
+number = {8},
+pages = {1265 - 1279},
+year = {1996},
+author = {R.C. Miall and D.M. Wolpert},
+}
+
+@ARTICLE{WALSH04,
+  AUTHOR =       {L.D. Walsh and C.W. Hesse and D.L. Morgan and U. Proske},
+  TITLE =        {Human forearm position sense after fatigue of elbow flexor muscles},
+  JOURNAL =      {Journal of Physiology},
+  YEAR =         {2004},
+  volume =       {558},
+  number =       {2},
+  pages =        {705-715},
+  month =        {Jul.},
+}
+
+@ARTICLE{KISTEMAKER06,
+  AUTHOR =       {Dinant A. Kistemaker and Arthur (Knoek) J. Van Soest and Maarten F. Bobbert},
+  TITLE =        {Is Equilibrium Point Control Feasible for Fast Goal-Directed Single-Joint Movements?},
+  JOURNAL =      {Journal of Neurphysiology},
+  YEAR =         {2006},
+  volume =       {95},
+  pages =        {2898-2912},
+  month =        {Feb}
+}
+
+@ARTICLE{THALER10,
+  AUTHOR =       {Lore Thaler and Melvyn A. Goodale},
+  TITLE =        {Beyond distance and direction - The brain represents target locations non-metrically},
+  JOURNAL =      {Journal of Vision},
+  YEAR =         {2010},
+  volume =       {10},
+  number =       {3},
+  pages =        {1-27},
+  month =        {Mar},
+}
+
+@PHDTHESIS{BROWNLTHESIS03,
+  AUTHOR =       {Liana E. Brown},
+  TITLE =        {Limb Position Drift and its Implications for Movement and Position Control},
+  SCHOOL =       {Pennsylvania State University},
+  YEAR =         {2003},
+  type =         {PHD Thesis},
+  month =        {May},
+}
+
+@ARTICLE{BROWNL03,
+  AUTHOR =       {Liana E. Brown and David A. Rosenbaum1 and Robert L. Sainburg},
+  TITLE =        {Limb Position Drift - Implications for Control of Posture and Movement},
+  JOURNAL =      {Journal of Neurophysiology},
+  YEAR =         {2003},
+  volume =       {90},
+  number =       {5},
+  pages =        {3105-3118},
+  month =        {Feb},
+}
+
+@ARTICLE{ANSEMS06,
+  AUTHOR =       {G.E. Ansems and T.J. Allen and U. Proske},
+  TITLE =        {Position sense at the human forearm in the horizontal plane during loading and vibration of elbow muscles},
+  JOURNAL =      {Journal of Physiology},
+  YEAR =         {2006},
+  volume =       {576},
+  number =       {2},
+  pages =        {445-455},
+  month =        {Oct},
+}
+
+@ARTICLE{BIZZI84,
+  AUTHOR =       {E. Bizzi and N. Accornero and W. Chapple and N. Hogan},
+  TITLE =        {Posture Control and Trajectory Formation During Arm Movement},
+  JOURNAL =      {Journal of Neuroscience},
+  YEAR =         {1984},
+  volume =       {4},
+  number =       {11},
+  pages =        {2738-2744},
+  month =        {Nov},
+}
+
+@ARTICLE{SITTIG87,
+  AUTHOR =       {A.C. Sittig and J.J. Denier van der Gon and C.C.A.M. Gielen},
+  TITLE =        {The contribution of afferent information on position and velocity to the control of slow and fast human forearm movements},
+  JOURNAL =      {Experimental Brain Research},
+  YEAR =         {1987},
+  volume =       {67},
+  pages =        {33-40},
+}
+
+@ARTICLE{CONNOLLY99,
+  AUTHOR =       {J.D. Connolly and M.A. Goodale},
+  TITLE =        {The role of visual feedback of hand position in the control of manual prehension},
+  JOURNAL =      {Experimental Brain Research},
+  YEAR =         {1999},
+  volume =       {125},
+  pages =        {281-286},
+}
+
+@ARTICLE{HAERIA05,
+  AUTHOR =       {Mohammad Haeria and Yashar Sarbaza and Shahriar Gharibzadeh},
+  TITLE =        {Modeling the Parkinson’s tremor and its treatments},
+  JOURNAL =      {Journal of Theoretical Biology},
+  YEAR =         {2005},
+  volume =       {236},
+  pages =        {311-322},
+  month =        {June},
+}
+
+@BOOK{WULF07,
+  AUTHOR =       {Gabriele Wulf},
+  TITLE =        {Attention and motor skills learning},
+  EDITION =      {First},
+  PUBLISHER =    {Human Kinetics},
+  YEAR =         {2007},
+}
+
+@BOOK{ROSENBAUM10,
+  AUTHOR =      {David A. Rosenbaum},
+  TITLE =       {Human Motor Control},
+  EDITION =     {Second},
+  PUBLISHER =   {Elsevier Academic Press},
+  YEAR =        {2010},
+}
+
+@ARTICLE{COHEN04,
+  AUTHOR =       {Cohen, R.G. and Rosenbaum, D.A.},
+  TITLE =        {Where objects are grasped reveals how grasps are planned - generation and recall of motor plans},
+  JOURNAL =      {Experimental Brain Research},
+  YEAR =         {2004},
+  volume =       {157},
+  pages =        {486-495},
+}
+
+@ARTICLE{ELLIOTT01,
+  AUTHOR =       {Elliot, D. and Helsen, W.F. and Chua, R.},
+  TITLE =        {A Century Later: Woodworth's (1899) two-component model of goal-directed aiming},
+  JOURNAL =      {Psychological Bulletin},
+  YEAR =         {2001},
+  volume =       {127},
+  pages =        {342-357},
+}
+
+@INPROCEEDINGS{DEMAIRE84,
+  AUTHOR =       {Demaire, C. and Honore, J. and Coquery, J.M.},
+  TITLE =        {Effects of ballistic and tracking movements on spinal proprioceptive and cutaneous pathways in man},
+  BOOKTITLE =    {Preparatory states and processes},
+  YEAR =         {1984},
+  editor =       {Kornblum, S. and Requin, J.},
+  pages =        {201-216},
+  address =      {Hillsdale, NJ},
+  publisher =    {Erlbaum},
+}
+
+@BOOK{MILNER95,
+  AUTHOR =       {Milner, A.D. and Goodale, M.A.},
+  TITLE =        {The visual brain in action},
+  PUBLISHER =    {Oxford University Press},
+  YEAR =         {1995},
+  address =      {New York},
+}
+
+@ARTICLE{ERICSSON93,
+  AUTHOR =       {Ericsson, K.A. and Krampe, R.T. and Tesch-Romer, C.},
+  TITLE =        {The role of deliberate practice in the acquisition of expert performance},
+  JOURNAL =      {Psychological Review},
+  YEAR =         {1993},
+  volume =       {100},
+  pages =        {363-406},
+}
+
+@ARTICLE{BUONOMANO98,
+  AUTHOR =       {Buonomano, D.V. and Merzenich, M.M.},
+  TITLE =        {Cortical Plasticity: From synapses to maps},
+  JOURNAL =      {Annual Review of Neuroscience},
+  YEAR =         {1998},
+  volume =       {21},
+  pages =        {149-186},
+}
+
+@ARTICLE{KAAS91,
+  AUTHOR =       {Kaas, J.H.},
+  TITLE =        {Plasticity of sensory and motor maps in adult mammals},
+  JOURNAL =      {Annual Review of Neuroscience},
+  YEAR =         {1991},
+  volume =       {14},
+  pages =        {137-167},
+}
+
+@ARTICLE{KEETCH05,
+  AUTHOR =       {Keetch, K.M. and Schmidt, R.A. and Lee, T.D. and Young, D.E.},
+  TITLE =        {Especial skills: Their emergence with massive amounts of practice},
+  JOURNAL =      {Journal of Experimental Psychology: Human Perception and Performance},
+  YEAR =         {2005},
+  volume =       {31},
+  pages =        {970-978},
+}
+
+@ARTICLE{MERZENICH84,
+  AUTHOR =       {Merzenich, M.M. and Nelson, R.J. and Stryker, M.P. and Cynder, M.S. and Shoppmann, A. and Zook, J.M.},
+  TITLE =        {Somatosensory cortical map changes following digit amputation in adult monkeys},
+  JOURNAL =      {Journal of Comparative Neurology},
+  YEAR =         {1984},
+  volume =       {224},
+  pages =        {591-605},
+}
+
+@ARTICLE{ELBERT95,
+  AUTHOR =       {Elbert, T. and Pantev, C. and Weinbruch, C. and Rockstroh, B. and Taub, E.},
+  TITLE =        {Increased cortical representation of the fingers of the left hand},
+  JOURNAL =      {Science},
+  YEAR =         {1995},
+  volume =       {270},
+  pages =        {305-307},
+}
+
+@ARTICLE{AGLIOTI95,
+  AUTHOR =       {Aglioti, S. and DeSouza, J.F. and Goodale, M.A.},
+  TITLE =        {Size-contrast illusions deceive the eye but not the hand},
+  JOURNAL =      {Current Biology},
+  YEAR =         {1995},
+  volume =       {5},
+  number =       {6},
+  pages =        {679-685},
+  month =        {June},
+}
+
+@ARTICLE{SCHMIDT79,
+  AUTHOR =       {Schmidt, R.A. and Zelaznik, H.N. and Hawkins, B. and Frank, J.S. and Quinn Jr, J.T.},
+  TITLE =        {Motor output variability: A theory for the accuracy of rapid motor acts},
+  JOURNAL =      {Psychological Review},
+  YEAR =         {1979},
+  volume =       {86},
+  pages =        {415-451},
+}
+
+@ARTICLE{MEYER88,
+  AUTHOR =       {Meyer, D.E. and Abrams, R.A. and Kornblum, S. and Wright, C.E. and Smith, J.E.K.},
+  TITLE =        {Optimality of human motor performance: Ideal control of rapid aimed movements},
+  JOURNAL =      {Psychological Review},
+  YEAR =         {1988},
+  volume =       {95},
+  pages =        {340-370},
+}
+
+@ARTICLE{MORASSO81,
+  AUTHOR =       {Morasso, P.},
+  TITLE =        {Spatial control of arm movements},
+  JOURNAL =      {Experimental Brain Research},
+  YEAR =         {1981},
+  volume =       {42},
+  pages =        {223-227},
+}
+
+@ARTICLE{ABEND82,
+  AUTHOR =       {Abend, W. and Bizzi, E. and Morasso, P.},
+  TITLE =        {Human arm trajectory formation},
+  JOURNAL =      {Brain},
+  YEAR =         {1982},
+  volume =       {105},
+  pages =        {331-348},
+}
+
+@ARTICLE{SOECHTING81,
+  AUTHOR =       {Soechting, J.F. and Lacquaniti, F.},
+  TITLE =        {Invariant characteristics of a pointing movement in man},
+  JOURNAL =      {Journal of Neuroscience},
+  YEAR =         {1981},
+  volume =       {1},
+  number =       {7},
+  pages =        {710-720},
+  month =        {Jul.},
+}
+
+@ARTICLE{SOECHTING95,
+  AUTHOR =       {Soechting, J.F. and Buneo, C.A. and Herrmann, U. and Flanders, M.},
+  TITLE =        {Moving Effortlessly in Three Dimensions: Does Donders' Law Apply to Arm Movements?},
+  JOURNAL =      {Journal of Neuroscience},
+  YEAR =         {1995},
+  volume =       {15},
+  number =       {9},
+  pages =        {6271-6280},
+  month =        {Sept.},
+}
+
+
+@ARTICLE{GORDON94,
+  AUTHOR =       {Gordon, J. and Ghez, C.},
+  TITLE =        {Accuracy of planar reaching movements: I. Independance of direction and extent of variability},
+  JOURNAL =      {Experimental Brain Research},
+  YEAR =         {1994},
+  volume =       {99},
+  pages =        {97-111},
+}
+
+@ARTICLE{VINCE67,
+  AUTHOR =       {Vince, M.A. and Welford, A.T.},
+  TITLE =        {Time taken to change the speed of a response},
+  JOURNAL =      {Nature},
+  YEAR =         {1967},
+  volume =       {213},
+  pages =        {532-533},
+}
+
+@ARTICLE{WOODWORTH1899,
+  AUTHOR =       {Woodworth, R.S.},
+  TITLE =        {The accuracy of voluntary movement},
+  JOURNAL =      {Pyschological Review},
+  YEAR =         {1899},
+  volume =       {3},
+  pages =        {1-119},
+}
+
+@ARTICLE{ROSENBAUM80,
+  AUTHOR =       {Rosenbaum, D.A.},
+  TITLE =        {Human movement initiation: Specification of arm, direction, and extent},
+  JOURNAL =      {Journal of Experimental Psychology: General},
+  YEAR =         {1980},
+  volume =       {109},
+  pages =        {444-474},
+}
+
+@ARTICLE{KEELE68,
+  AUTHOR =       {Keele, S.W. and Posner, M.I.},
+  TITLE =        {Processing visual feedback in rapid movement},
+  JOURNAL =      {Journal of Experimental Psychology},
+  YEAR =         {1968},
+  volume =       {77},
+  pages =        {155-158},
+}
+
+@ARTICLE{CARLTON81,
+  AUTHOR =       {Carlton, L.G.},
+  TITLE =        {Processing visual feedback information for movement control},
+  JOURNAL =      {Journal of Experimental Pyschology: Human Perception and Performance},
+  YEAR =         {81},
+  volume =       {7},
+  pages =        {1019-1030},
+}
+
+@ARTICLE{ZELAZNIK83,
+  AUTHOR =       {Zelaznik, H.N. and Hawkins, B. and Kisselburgh, L.},
+  TITLE =        {Rapid visual feedback processing in single-aiming movements},
+  JOURNAL =      {Journal of Motor Behaviour},
+  YEAR =         {83},
+  volume =       {15},
+  pages =        {217-236},
+}
+
+@ARTICLE{SNYDER97,
+  AUTHOR =       {Snyder, L.H. and Batista, A.P. and Andersen, R.A.},
+  TITLE =        {Coding of intention in the posterior parietal cortex},
+  JOURNAL =      {Nature},
+  YEAR =         {1997},
+  volume =       {386},
+  pages =        {167-170},
+}
+
+@ARTICLE{BATISTA99,
+  AUTHOR =       {Batista, A.P. and Buneo, C.A. and Snyder, L.H. and Andersen, R.A.},
+  TITLE =        {Reach plans in eye-centered coordinates},
+  JOURNAL =      {Science},
+  YEAR =         {1999},
+  volume =       {285},
+  pages =        {257-260},
+}
+
+@ARTICLE{RIZZOLATTI97,
+  AUTHOR =       {Rizzolatti, G. and Fogassi, L. and Gallese, V.},
+  TITLE =        {Parietal cortex: from sight to action},
+  JOURNAL =      {Current Opinon in Neurbiology},
+  YEAR =         {1997},
+  volume =       {7},
+  pages =        {562-567},
+}
+
+@ARTICLE{STUPHORN99,
+  AUTHOR =       {Stuphorn, V. and Hoffmann, K.P. and Miller, L.E.},
+  TITLE =        {Correlation of primate superior colliculus and reticular formation discharge with proximal limb muscle activity},
+  JOURNAL =      {Journal of Neurophysiology},
+  YEAR =         {1999},
+  volume =       {81},
+  pages =        {1978-1982},
+}
+
+@ARTICLE{STUPHORN00,
+  AUTHOR =       {Stuphorn, V. and Bauswein, E. and Hoffman, K.P.},
+  TITLE =        {Neurons in the primate superior colliculus coding of arm movements in gaze-related coordinates},
+  JOURNAL =      {Journal of Neurophysiology},
+  YEAR =         {00},
+  volume =       {83},
+  pages =        {1283-1299},
+}
+
+
+%******************* Arm movement paper citations End ************************
+%******************* Vibrotactile paper citations Begin ************************
+@INPROCEEDINGS{VANERP02,
+  AUTHOR =       {J. B. F. van Erp},
+  TITLE =        {Guidelines for the use of vibro-tactile displays},
+  BOOKTITLE =       {Proceedings of EuroHaptics},
+  YEAR =         {2002},
+  pages =        {18-22}
+  address =      {Soesterberg, Netherlands},
+}
+
+@ARTICLE{JONES08,
+  AUTHOR =       {L. A. Jones and N. B. Sarter},
+  TITLE =        {Tactile Displays: Guidance for Their Design and Application},
+  JOURNAL =      {Human Factors: The Journal of the Human Factors and Ergonomics Society},
+  YEAR =         {2008},
+  volume =       {50},
+  number =       {1},
+  pages =        {90-111},
+  month =        {Feb.},
+}
+
+@TECHREPORT{ANTIPOLIS,
+  AUTHOR =       {Antipolis, S.},
+  TITLE =        {Telecommunications keypads and keyboards; tactile identifier},
+  INSTITUTION =  {European Telecommunications Standardisation Institute (ETSI)},
+  type =         {ES},
+  number =       {201 381},
+  address =      {France},
+}
+
+@INCOLLECTION{SHERRICK86,
+  AUTHOR =       {Sherrick, C.A. and Cholewiak, R.W.},
+  TITLE =        {Cutaneous Sensitivity},
+  BOOKTITLE =    {Handbook of Perception and Human Performance},
+  PUBLISHER =    {John Wiley and Sons},
+  YEAR =         {1986},
+  editor =       {Boff, K.R. and Kauffman, L. and Thomas, J.P.},
+  chapter =      {12},
+  pages =        {1-57},
+  address =      {New York, NY},
+}
+
+@ARTICLE{CRAIG72,
+  AUTHOR =       {Craig, J.C.},
+  TITLE =        {Difference threshold for intensity of tactile stimuli},
+  JOURNAL =      {Perception and Psychophysics},
+  YEAR =         {1972},
+  volume =       {11},
+  number =       {2},
+  pages =        {150-152},
+}
+
+@ARTICLE{GOFF67,
+  AUTHOR =       {Goff, G.D.},
+  TITLE =        {Differential discrimmination of frequency of cutaneous mechanical vibration},
+  JOURNAL =      {Journal of Experimental Pyschology},
+  YEAR =         {67},
+  volume =       {74},
+  number =       {2},
+  pages =        {294-299},
+}
+
+
+
+@INCOLLECTION{GESCHEIDER74,
+  AUTHOR =       {Gescheider, G.A.},
+  TITLE =        {Temporal relations in cutaneous stimulation},
+  BOOKTITLE =    {Cutaneous Communications Systems and Devices},
+  PUBLISHER =    {The Pyschonomic Society},
+  YEAR =         {1974},
+  editor =       {Geldard, F.A.},
+  address =      {Austin, TX},
+}
+
+@ARTICLE{PETROSINO89,
+  AUTHOR =       {Petrosino, L. and Fucci, D.},
+  TITLE =        {Temporal resolution of the aging tactile sensory system},
+  JOURNAL =      {Perceptual and Motor Skills},
+  YEAR =         {1989},
+  volume =       {68},
+  pages =        {288-290},
+}
+
+@INCOLLECTION{WEINSTEIN68,
+  AUTHOR =       {Weinstein, S.},
+  TITLE =        {Intensive and extensive aspects of tactile sensitivity as function of body-part, sex, and laterality},
+  BOOKTITLE =    {The Skin Sense},
+  PUBLISHER =    {Springfield C.C. Thomas},
+  YEAR =         {1968},
+  editor =       {Kenshalo, D.R.},
+  pages =        {195-218},
+}
+
+@ARTICLE{JOHNSON81,
+  AUTHOR =       {Johnson, K.O. and Philips, J.R.},
+  TITLE =        {Tactile spatial resolution. I. Two point discrimination, gap detection, grating resolution, and letter recognition},
+  JOURNAL =      {Journal of Neurophysiology},
+  YEAR =         {1981},
+  volume =       {46},
+  number =       {6},
+  pages =        {1177-1191},
+  month =        {Dec.},
+}
+
+@ARTICLE{VERRILLO62,
+  AUTHOR =       {R. T. Verrillo},
+  TITLE =        {Investigation of some parameters of the cutaneous threshold for vibration},
+  JOURNAL =      {Journal of Acoustical Society of America},
+  YEAR =         {1962},
+  volume =       {34},
+  number =       {11},
+  pages =        {1768-1773},
+}
+
+@ARTICLE{VERRILLO65,
+  AUTHOR =       {R. T. Verrillo},
+  TITLE =        {Temporal summation in vibrotactile sensitivity},
+  JOURNAL =      {Journal of Acoustical Society of America},
+  YEAR =         {1962},
+  volume =       {37},
+  number =       {5},
+  pages =        {843-846},
+}
+
+@ARTICLE{VERRILLO66,
+  AUTHOR =       {R. T. Verrillo},
+  TITLE =        {Vibrotactile thresholds for hairy skin},
+  JOURNAL =      {Journal of Experimental Psychology},
+  YEAR =         {1966},
+  volume =       {72},
+  number =       {1},
+  pages =        {47-50},
+}
+
+@ARTICLE{VERRILLO83,
+  AUTHOR =       {Verrillo, R.T. and Gescheider, G.A.},
+  TITLE =        {Vibrotactile masking: Effects of one- and two-site stimulation},
+  JOURNAL =      {Perception and Pyschophyics},
+  YEAR =         {1983},
+  volume =       {33},
+  number =       {4},
+  pages =        {379-387},
+}
+
+@ARTICLE{SHERRICK90,
+  AUTHOR =       {Sherrick, C.A. and Cholewiak, R.W. and Collins, A.A.},
+  TITLE =        {The localization of low- and high-frequency vibrotactile stimuli},
+  JOURNAL =      {Journal of the Acoustical Society of America},
+  YEAR =         {1990},
+  volume =       {88},
+  number =       {1},
+  pages =        {169-178},
+}
+
+@ARTICLE{CHOLEWIAK03,
+  AUTHOR =       {Cholewiak, R.W. and Collins, A.A.},
+  TITLE =        {Vibrotactile localization on the arm: Effects of place, space, and age},
+  JOURNAL =      {Perception and Psychophysics},
+  YEAR =         {2003},
+  volume =       {65},
+  pages =        {1058-1077},
+}
+
+
+%******************* Vibrotactile paper citations End ************************
+%******************* Distance Estimation citations Begin ************************
+@BOOK{HARTLE03,
+  AUTHOR =       {Richard Hartley and Andrew Zisserman},
+  TITLE =        {Multiple View Geometry in Computer Vision},
+  PUBLISHER =    {Cambridge University Press},
+  YEAR =         {2003},
+  edition =      {2nd},
+  isbn =         {0-521-54051-8}
+}
+
+@BOOK{MAYISO04,
+  AUTHOR =       {Yi Ma and Stefano Soatto and Jana Kosecka and S. Shankar Sastry},
+  TITLE =        {An Invitation to 3-{D} Vision},
+  PUBLISHER =    {Springer-Verlag, New York Inc.},
+  YEAR =         {2004},
+  isbn =         {0-387-00893-4}
+}
+
+@BOOK{FAUGER01,
+  AUTHOR =       {Oliver Faugeras and Quang-Tuan Long},
+  TITLE =        {The Geometry of Multiple Images},
+  PUBLISHER =    {The MIT Press},
+  YEAR =         {2001},
+  isbn =         {0-262-06220-8}
+
+}
+
+@ARTICLE{VEDALD07,
+TITLE={Moving Forward in Structure From Motion},
+AUTHOR={Andrea Vedaldi and Gregorio Guidi and Stefano Soatto},
+JOURNAL={Computer Vision and Pattern Recognition, 2007. CVPR '07. IEEE Conference on},
+year={17-22 June 2007},
+pages={1-7},
+abstract={It is well-known that forward motion induces a large number of local minima in the instantaneous least-squares reprojection error. This is caused in part by singularities in the error landscape around the forward direction, and presents a challenge in using existing algorithms for structure-from-motion in autonomous navigation applications. In this paper we prove that imposing a bound on the reconstructed depth of the scene makes the least-squares reprojection error continuous. This has implications for autonomous navigation, as it suggests simple modifications for existing algorithms to minimize the effects of local minima in forward translation.},
+doi={10.1109/CVPR.2007.383117},
+}
+
+@INPROCEEDINGS{LEIBEB07,
+  AUTHOR =       {Bastian Leibe and Nico Cornelis and Kurt Cornelis and Luc Van Gool},
+  TITLE =        {Dynamic 3{D} Scene Analysis from a Moving Vehicle},
+  BOOKTITLE =    {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+  YEAR =         {2007},
+  pages =        {1--8},
+  address =      {Minneapolis, MN},
+  month =        {June}
+}
+
+@ARTICLE{POLLEF04,
+  AUTHOR =       {Marc Pollefeys and Luc Van Gool and Maarten Vergauwen and Frank Verbiest and Kurt Cornelis and Jan Tops and Reinhard Koch},
+  TITLE =        {Visual Modeling with a Hand-Held Camera },
+  JOURNAL =      {International Journal of Computer Vision},
+  YEAR =         {2004},
+  volume =       {59},
+  number =       {3},
+  pages =        {207--232},
+  month =        {September--October},
+  abstract =     {In this paper a complete system to build visual models from camera images is presented.
+                    The system can deal with uncalibrated image sequences acquired with a hand-held camera.
+                    Based on tracked or matched features the relations between multiple views are computed.
+                    From this both the structure of the scene and the motion of the camera are retrieved. The
+                    ambiguity on the reconstruction is restricted from projective to metric through self-calibration.
+                    A flexible multi-view stereo matching scheme is used to obtain a dense estimation of the surface
+                    geometry. From the computed data different types of visual models are constructed. Besides the
+                    traditional geometry- and image-based approaches, a combined approach with view-dependent geometry
+                    and texture is presented. As an application fusion of real and virtual scenes is also shown.}
+}
+
+@ARTICLE{HOFFMANN06,
+title={Visual Servoing with Moments of SIFT Features},
+author={Frank Hoffmann and Thomas Nierobisch and Torsten Seyffarth and Gunter Rudolph},
+journal={Systems, Man and Cybernetics, 2006. SMC '06. IEEE International Conference on},
+year={8-11 Oct. 2006},
+volume={5},
+pages={4262-4267},
+abstract={Robotic manipulation of daily-life objects is an essential requirement in service robotic applications. In that context image based visual servoing is a means to position the end-effector in order to manipulate objects of unknown pose. This contribution proposes a 6 DOF visual servoing scheme that relies on the pixel coordinates, scale and orientation of SIFT features. The control is based on geometric moments computed over an alterable set of redundant SIFT feature correspondences between the current and the reference view. The method is generic as it does not depend on a geometric object model but automatically extracts SIFT features from images of the object. The foundation of visual servoing on generic SIFT features renders the method robust with respect to loss of redundant features caused by occlusion or changes in view point. The moment based representation establishes an approximate one-to-one relationship between visual features and degrees of motion. This property is exploited in the design of a decoupled controller that demonstrates superior performance in terms of convergence and robustness compared with an inverse image Jacobian controller. Several experiments with a robotic arm equipped with a monocular eye-in-hand camera demonstrate that the approach is efficient and reliable.},
+}
+
+@MISC{Bib:CamerCalib,
+  author =       {K. Strobl and W. Sepp and S. Fuchs and C. Paredes and K. Arbter},
+  title =        {Camera Calibration Toolbox for Matlab},
+  howpublished = {http://www.vision.caltech.edu/bouguetj/calib\_doc},
+  source =       {Institute for Robotics and Mechatronic, German Aerospace Center (DLR)},
+}
+
+%******************* Distance Estimation citations End ************************
+
+@MISC{IMAGEWrist,
+  author =       {Unknown},
+  title =        {Hand Anatomy : Terminology Your Surgeon May Use},
+  howpublished = {http://www.assh.org/public/handanatomy/pages/default.aspx\#surfaceanatomy},
+  year =         {2009},
+  source =       {American Society for Surgery of the Hand},
+}

@@ -1,0 +1,688 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       uwothesisSGPS.cls       Version 2.1.1 May 30, 2018
+%       By: Duane J. Jacques
+%
+%       Modified from 
+%       uwo.cls       Version 2.1 December 15, 2013
+%       By: Duane J. Jacques
+%         
+%       Modified from 
+%       uwo.cls       Version 2.0 April 23, 2008
+%       By: Dan James Dechene
+%
+%       Modified from
+%       uwothesis.cls (By Ranga Rodrigo) Version 0.1 March 25 2005
+%       Modified from
+%       easychithesis.cls Version 1.14 (Martin Pergler)  June 1, 2000
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NeedsTeXFormat{LaTeX2e}[1995/06/01]
+\ProvidesClass{uwo}[2008/04/23 UWO Thesis Class For LaTeX v2.0]
+\RequirePackage{fancyhdr}
+%\makeatletter 
+
+\RequirePackage{setspace}
+
+\newcommand{\etptsize}{12pt}
+
+\DeclareOption{10pt}{\renewcommand{\etptsize}{10pt}}
+\DeclareOption{11pt}{\renewcommand{\etptsize}{11pt}}
+\DeclareOption{12pt}{\renewcommand{\etptsize}{12pt}}
+\DeclareOption{letterpaper}{\PassOptionsToClass{letterpaper}{report}}
+
+% The following options set the global amount of spacing
+
+\newcommand{\etspacing}{\setstretch{1.37}}
+\DeclareOption{truedoublespace}{\renewcommand{\etspacing}{\doublespacing}}
+\DeclareOption{doublespace}{\renewcommand{\etspacing}{\setstretch{1.37}}}
+\DeclareOption{onehalfspace}{\renewcommand{\etspacing}{\onehalfspacing}}
+\DeclareOption{singlespace}{\renewcommand{\etspacing}{\singlespacing}}
+
+
+\newcommand{\etchapterheadstyle}[1]{\LARGE\bfseries{#1}}
+\newcommand{\etchapterheadstyletoc}[1]{\bf{#1}}
+
+\DeclareOption{plainchapterheads}{
+  \renewcommand{\etchapterheadstyle}[1]{\LARGE\bfseries #1}
+  \renewcommand{\etchapterheadstyletoc}[1]{\bf{#1}}
+}
+
+\DeclareOption{bigchapterheads}{
+  \renewcommand{\etchapterheadstyle}[1]{\huge\bfseries #1}
+  \renewcommand{\etchapterheadstyletoc}[1]{\bf{#1}}
+}
+
+
+\newcommand{\etpagepenalties}{ %@MP
+\widowpenalty\@highpenalty
+\clubpenalty\@highpenalty
+\@beginparpenalty0
+\@itempenalty0
+\setlength{\parskip}{0pt plus 6pt} % default is 0plus1pt, need more
+                                   % wiggle space for page break alg.
+}
+\DeclareOption{oldpenalties}{\renewcommand{\etpagepenalties}{}}
+\DeclareOption*{%
+ \PassOptionsToClass{\CurrentOption}{report}
+}
+
+\ProcessOptions\relax
+\LoadClass[\etptsize]{report}
+
+% Adjust spacing of document
+
+\etspacing
+\etpagepenalties %@MP
+
+\newcommand{\dedication}{
+        \chapter*{}
+        \thispagestyle{empty}
+}
+
+
+\newcommand{\topmatter}[1]{
+\pagestyle{plain}  
+        \chapter*{#1}
+        \addcontentsline{toc}{chapter}{#1}
+}
+
+\newcommand{\mytopmatter}[1]{
+\pagestyle{plain}
+
+        \clearpage
+        \addcontentsline{toc}{chapter}{#1}
+    
+}
+
+
+\renewenvironment{abstract}{\fancyhead[RE,RO]{}\fancyfoot[CE,CO]{\thepage} \ifnum\value{headercount}=1\fancyhead[LE,LO]{\textit{Abstract}}\fi\topmatter{Abstract}}{}
+
+
+\newcommand{\startAcronyms}[0]{%
+    
+
+    \onehalfspacing%
+    \chapter*{Acronyms and Symbols}%
+    \ifnum\value{headercount}=1
+        \fancyhead[LE,LO]{\textit{Acronyms and Symbols}}%
+    \fi
+    \addcontentsline{toc}{chapter}{Acronyms and Symbols}%
+    \begin{tabular}[width=6in]{p{1in}m{0.3in}p{4.2in}}%
+    
+}
+\newcounter{ackcount}
+\newcounter{ackpagecount}
+\setcounter{ackcount}{0}
+\setcounter{ackpagecount}{0}
+
+\newcounter{headercount}
+\setcounter{headercount}{0}
+
+\newcommand{\stopAcronyms}[0]{\end{tabular}}
+
+\newenvironment{acronyms}{%
+    \onehalfspacing%
+    \chapter*{Acronyms and Symbols}%
+    \ifnum\value{headercount}=1
+        \fancyhead[LE,LO]{\textit{Acronyms and Symbols}}%
+    \fi
+    \addcontentsline{toc}{chapter}{Acronyms and Symbols}%
+    \begin{tabular}[width=6in]{p{1in}m{0.3in}p{4.2in}}%
+}{\end{tabular}}
+
+\newcommand{\nextpage}[0]{%
+    
+    \end{tabular}%
+    \newpage%
+    \noindent\begin{tabular}[width=6in]{p{1in}m{0.3in}p{4.2in}}%
+}
+\newcommand{\enableHeaders}{ %
+    \setcounter{headercount}{1}
+    \renewcommand{\headrulewidth}{0.4pt}
+}
+\newcommand{\doitone}{ %
+     \setcounter{ackcount}{0}
+     \nextpage
+     \addtocounter{ackpagecount}{1}
+}
+
+
+\newcommand{\doittwo}{ %
+    \ifnum\value{ackcount}=28
+        \doitone
+    \fi
+}
+
+   
+\newcommand{\newack}[2]{ %
+   
+    \ifnum\value{ackcount}=32\doitone%
+    \else%
+        \ifnum\value{ackpagecount}=0\doittwo%
+        \fi%
+    \fi%
+   
+    
+    
+    \addtocounter{ackcount}{1}
+     \textbf{#1}&&\emph{#2}\\
+
+}
+
+\newenvironment{acknowledgements}{%
+    \singlespacing %
+    \clearpage
+    \ifnum\value{headercount}=1
+        \fancyhead[LE,LO]{\textit{Acknowledgements}}%
+    \fi
+    \chapter*{Acknowledgements}%
+    \ifnum\value{headercount}=1
+        \fancyhead[LE,LO]{\textit{Acknowledgements}}%
+    \fi
+    \addcontentsline{toc}{chapter}{Acknowledgements}%
+}{\ifnum\value{headercount}=1
+\fancyhead[LE,LO]{\textit{Acknowledgements}}
+\fi
+}%
+\newcommand{\mainmatter}{
+
+        \clearpage
+
+        \pagestyle{myheadings}
+        \markright{\thepage}
+        \pagenumbering{arabic}
+}
+
+
+
+%Added by Dan Dechene
+\newcommand{\firstname}[1]{\gdef\@firstname{#1}}
+\newcommand{\middlename}[1]{\gdef\@middlename{#1}}
+\newcommand{\lastname}[1]{\gdef\@lastname{#1}}
+\newcommand{\supervisor}[2]{\gdef\@supervisor{#1} \gdef\@cosupervisor{#2}}
+\newcommand{\committee}[2]{\gdef\@cone{#1} \gdef\@ctwo{#2}}
+\newcommand{\examiners}[4]{\gdef\@exone{#1} \gdef\@extwo{#2} \gdef\@exthree{#3} \gdef\@exfour{#4}}
+\newcommand{\chair}[1]{\gdef\@chair{#1}}
+\RequirePackage{color,epsfig, setspace, hyperref}
+\newcommand{\degree}[1]{\gdef\@degree{#1}}
+\newcommand{\dept}[1]{\gdef\@dept{#1}}
+\newcommand{\gradprog}[1]{\gdef\@gradprog{#1}}
+\newcommand{\faculty}[1]{\gdef\@faculty{#1}}
+\newcommand{\rights}[1]{\gdef\@rights{#1}}
+\newcommand{\spine}[1]{\gdef\@spine{#1}}
+\newcommand{\format}[1]{\gdef\@format{#1}}
+
+
+\newcommand{\cofe}{%
+{
+   \onehalfspacing
+   \begin{center}
+     \vspace*{0.0in} %for some reason this produces exactly right amount of space at top %@MP
+     \uppercase{The University of Western Ontario}\\
+     \uppercase{Faculty of Graduate Studies}
+     \vfill
+     \uppercase{\textbf{Certificate of Examination}}
+     \vfill
+     {
+     \begin{singlespace}
+     \begin{tabbing}
+       \hspace*{0.25in}\=\hspace{3.25in}\= \kill
+       \> \textbf{Chief Advisor:} \> \textbf{Examining Board:}\\
+       \\
+       \> \rule{2.5in}{0.1mm} \> \rule{2.5in}{0.1mm}\\
+       \> \@supervisor \> \@exone\\
+       \\
+       \> \> \rule{2.5in}{0.1mm}\\
+       \> \textbf{Advisory Committee} \>\@extwo\\ % this is where Advisory Committee: goes
+       \\
+       \> \rule{2.5in}{0.1mm} \> \rule{2.5in}{0.1mm}\\
+       \>  \@cone \> \@exthree\\
+       \\
+       \> \rule{2.5in}{0.1mm}
+       \ifx\@exfour\@empty 
+        \> \\
+        \else 
+        \> \rule{2.5in}{0.1mm}\\
+       \fi%
+       \> \@ctwo
+       \ifx\@exfour\@empty
+       \> \\
+       \else
+       \> \@exfour \\
+       \fi%
+     \end{tabbing}
+     \end{singlespace}
+     }
+     \vfill
+     The thesis by\\
+     \textbf{\@firstname~\@middlename~\underline{\@lastname}}\\
+     \vfill
+     entitled:\\
+     \textbf{\@title}\\
+     \vfill
+     is accepted in partial fulfillment of the\\
+     requirements for the degree of\\
+     \textbf{\@degree}\\
+     \vfill
+     {
+     \begin{singlespace}
+     \begin{tabbing}
+       \hspace*{0.25in}\=\hspace{3.25in}\= \kill
+       \> Date: \rule{1.5in}{0.1mm} \> \rule{2.5in}{0.1mm}\\
+       \> \> Chair of Examining Board \\
+       \> \> \@chair
+
+     \end{tabbing}
+     \end{singlespace}
+     }
+     \vspace*{0.0in} %@MP
+   \end{center}
+}
+}
+
+
+\newcommand{\cocofe}{%
+{
+   \onehalfspacing
+   \begin{center}
+     \vspace*{0.0in} %for some reason this produces exactly right amount of space at top %@MP
+     \uppercase{The University of Western Ontario}\\
+     \uppercase{Faculty of Graduate Studies}
+     \vfill
+     \uppercase{\textbf{Certificate of Examination}}
+     \vfill
+     {
+     \begin{singlespace}
+     \begin{tabbing}
+       \hspace*{0.25in}\=\hspace{3.25in}\= \kill
+       \> \textbf{Chief Advisors:} \> \textbf{Examining Board:}\\
+       \\
+       \> \rule{2.5in}{0.1mm} \> \rule{2.5in}{0.1mm}\\
+       \> \@supervisor \> \@exone\\
+       \\
+       \> \rule{2.5in}{0.1mm} \> \rule{2.5in}{0.1mm}\\
+       \> \@cosupervisor  \>\@extwo\\
+       \\
+       \>  \> \rule{2.5in}{0.1mm}\\
+       \>  \textbf{Advisory Committee:} \> \@exthree\\
+       \\
+       \> \rule{2.5in}{0.1mm}
+       \ifx\@exfour\@empty 
+        \> \\
+        \else 
+        \> \rule{2.5in}{0.1mm}\\
+       \fi%
+       \> \@cone
+       \ifx\@exfour\@empty
+       \> \\
+       \else
+       \> \@exfour \\
+       \fi%
+       \\
+       \> \rule{2.5in}{0.1mm} \> \\
+       \> \@ctwo \> \\
+     \end{tabbing}
+     \end{singlespace}
+     }
+     \vfill
+     The thesis by\\
+     \textbf{\@firstname~\@middlename~\underline{\@lastname}}\\
+     \vfill
+     entitled:\\
+     \textbf{\@title}\\
+     \vfill
+     is accepted in partial fulfillment of the\\
+     requirements for the degree of\\
+     \textbf{\@degree}\\
+     \vfill
+     {
+     \begin{singlespace}
+     \begin{tabbing}
+       \hspace*{0.25in}\=\hspace{3.25in}\= \kill
+       \> Date: \rule{1.5in}{0.1mm} \> \rule{2.5in}{0.1mm}\\
+       \> \> Chair of Examining Board \\
+       \> \> \@chair
+
+     \end{tabbing}
+     \end{singlespace}
+     }
+     \vspace*{0.0in} %@MP
+   \end{center}
+}
+}
+
+\renewcommand{\maketitle}{%
+\begin{titlepage}
+\vspace{0.0in}
+\centering{\LARGE\bfseries\@title\\}
+\normalsize \bf
+\vspace{.3in}
+\begin{doublespacing}
+%\\
+%(Spine title:~\@spine)\\
+(Thesis format:~\@format)\\
+\end{doublespacing}
+\vspace{.3in}
+\begin{singlespace}
+by\\
+\vspace{0.3in}
+\@firstname~\@middlename~\underline{\@lastname}\\
+\vspace{.8in}
+Graduate Program\\
+in\\
+\@gradprog\\
+\@dept\\
+\vspace{0.8in}
+A thesis submitted in partial fulfillment\\
+of the requirements for the degree of\\
+\@degree\\
+\vspace{0.8in}
+\@faculty\\
+The University of Western Ontario\\
+London, Ontario, Canada\\
+%\@date\\
+\vspace{.4in}
+\copyright~
+\@rights
+\end{singlespace}
+\end{titlepage}
+\pagestyle{fancy} \clearpage \fancypagestyle{plain}{
+  \fancyhf{}
+  \markboth{}{}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+} \clearpage \onehalfspacing
+%\chapter*{Certificate of Examination} \setcounter{page}{2}
+%\addcontentsline{toc}{chapter}{Certificate of Examination}
+%\ifx\@cosupervisor\@empty
+%    \cofe
+%    \else
+%    \cocofe
+%    \fi%
+% \pagestyle{fancy} \clearpage \fancypagestyle{plain}{
+%  \fancyhf{}
+%  \markboth{}{}
+%  \fancyfoot[C]{\thepage}
+%  \renewcommand{\headrulewidth}{0pt}
+%  \renewcommand{\footrulewidth}{0pt}
+%}
+
+}
+
+
+
+\newcommand{\configureThesis}[0]{
+
+\hypersetup{
+    pdfborder = 0 0 0,
+    pdftitle = {Thesis},
+    pdfauthor = {\@firstname \@lastname},
+    }
+\parindent 30pt
+\oddsidemargin 0.5in \evensidemargin 0.5in \topmargin 0.0in
+\textheight 8.5in \textwidth 6in \setcounter{secnumdepth}{4}
+\headheight 15pt
+
+\begin{document}
+\pagenumbering{roman}
+
+ \maketitle
+ \setcounter{page}{2}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Internal Formatting Commands For This Thesis Style
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Redo commands that make chapter & section headers
+%
+\usepackage{epsfig, setspace, pmgraph}
+%\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{afterpage}
+\usepackage[intlimits,sumlimits]{amsmath}
+\usepackage{amsfonts, amssymb}
+\usepackage{dsfont,courier, mathrsfs}
+\usepackage{pifont, bbding}
+%\usepackage{dropping}
+\usepackage{pstricks}
+\usepackage{nameref}
+\usepackage{sidecap}
+\usepackage{bibentry}
+\usepackage{nopageno}
+\usepackage{fancyhdr}
+\usepackage{ccaption}
+\usepackage[center]{caption}
+\usepackage{acronym}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{eso-pic}
+%\usepackage{color}
+\usepackage[bottom]{footmisc}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{lscape}
+
+\renewcommand{\@makechapterhead}[1]{{
+        \vspace*{0.3in}%
+        \normalfont % also had \large\bfseries, moved to etchapterheadstyle %@MP
+        \begin{center}
+        \etchapterheadstyle{\@chapapp{ \thechapter}}  %  CHAPTER 1 or APPENDIX A
+        \etchapterheadstyle{#1}                       %     TITLE OF CHAPTER
+        \end{center}
+}\etspacing}
+\renewcommand{\@makeschapterhead}[1]{{
+    \vspace*{0.3in}%
+        \normalfont %had \large\bfseries, see above %@MP
+        \begin{center}
+        \etchapterheadstyle{#1}                       %     TITLE OF CHAPTER
+        \end{center}
+        \doublespacing
+}}
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+                                {-3.5ex \@plus -1ex \@minus -.2ex}%
+                                {2.3ex \@plus.2ex}%
+                                {\normalfont\Large\bfseries\raggedright}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+                                {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                {1.5ex \@plus .2ex}%
+                                {\normalfont\large\bfseries\raggedright}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+                                {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                {1.5ex \@plus .2ex}%
+                                {\normalfont\bfseries}}
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+                                {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                {1.5ex \@plus .2ex}%
+                                %{3.25ex \@plus1ex \@minus.2ex}%
+                                %{-1em}%
+                                {\normalfont\normalsize\bfseries}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{5}{\z@}%{\parindent}%
+                                {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                {1.5ex \@plus .2ex}%
+                                %{3.25ex \@plus1ex \@minus .2ex}%
+                                %{-1em}%
+                                {\normalfont\normalsize\itshape}}
+
+% Change style of printing chapters in TOC to match chapter headings.
+
+\renewcommand*\l@chapter[2]{%
+  \ifnum \c@tocdepth >\m@ne
+    \addpenalty{-\@highpenalty}%
+    \vskip 1.0em \@plus\p@
+    \setlength\@tempdima{1.5em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip
+      \etchapterheadstyletoc{#1}\nobreak
+       \leaders\hbox{$\m@th % these 3 lines add dots to line.
+        \mkern \@dotsep mu\hbox{.}\mkern \@dotsep % copied from latex.ltx
+        mu$}\hfill % should be easier way of doing this
+      \hfil \nobreak\hb@xt@\@pnumwidth{\hss #2}\par
+      \penalty\@highpenalty
+    \endgroup
+  \fi}
+
+\newcommand*\l@app[2]{%
+  \ifnum \c@tocdepth >\m@ne
+    \addpenalty{-\@highpenalty}%
+    \vskip 1.0em \@plus\p@
+    \setlength\@tempdima{1.5em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip
+      \etchapterheadstyletoc{#1}\nobreak
+      \hfil \nobreak\hb@xt@\@pnumwidth{\hss #2}\par
+      \penalty\@highpenalty
+    \endgroup
+  \fi}
+% Change name of table of contents
+
+\renewcommand{\contentsname}{Table of Contents}
+
+% Change name of bibliography
+
+\renewcommand{\bibname}{References}
+
+
+
+
+\clearpage
+% Change the margins to fit requirements
+
+\setlength{\oddsidemargin}{0.5in}  % really 1.5in
+\setlength{\evensidemargin}{0.5in}  % really 1.5in
+\setlength{\textwidth}{6in}
+\setlength{\topmargin}{0in}   % really 1in
+\setlength{\headheight}{0.20in}
+\setlength{\headsep}{0.20in}
+\setlength{\textheight}{8.5in}
+\setlength{\footskip}{0.25in} % was 0.3
+\setlength{\footnotesep}{0.6cm}
+%=========================================
+\setcounter{secnumdepth}{3}  % my change
+%=========================================
+\newcommand{\configureBody}[0]{\newpage \pagenumbering{arabic} \setcounter{page}{1}
+\clearpage
+\fancyhead[RE,RO]{\thepage}\fancyfoot[CE,CO]{}\fancypagestyle{plain}{
+  \fancyhf{}
+    \markboth{}{\thepage}
+  \fancyhead[R]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}}
+% Adjust sizes of subsubscripts, etc to be no smaller than 9pts %@MP
+% thesis office rule.
+
+\AtBeginDocument{ % otherwise some packages may clobber it
+\DeclareMathSizes{12}{12}{10}{9}
+\DeclareMathSizes{11}{11}{10}{9}
+\DeclareMathSizes{10}{10}{9}{9}
+}
+
+\newcommand{\references}[2]{%
+\ifnum\value{headercount}=1
+    \fancyhead[LE,LO]{\textit{References}}%
+    \fi
+    \clearpage{
+        \singlespacing \pagebreak
+        \addcontentsline{toc}{chapter}{References}
+        \bibliography{#2}
+        \bibliographystyle{#1}
+    }
+}
+
+\newenvironment{CV}{%
+    \clearpage %
+    \chapter*{Curriculum Vitae}%
+    \addcontentsline{toc}{chapter}{Curriculum Vitae}
+    \begin{singlespace}%
+}{\end{singlespace}}
+
+
+\newcommand{\startAppendix}{ \appendix \addtocontents{toc}{\contentsline{app}{Appendices}{}{}}}
+\newcommand{\appendixChapter}[1]{%
+    \clearpage
+    \ifnum\value{headercount}=1
+    \fancyhead[LE,LO]{\textit{Appendix \thechapter: #1}}%
+    \fi
+    \chapter{#1}%
+}
+\let\oldtableofcontents = \tableofcontents
+\renewcommand{\tableofcontents}{ \clearpage\fancyhead[RE,RO]{}\fancyfoot[CE,CO]{\thepage} \ifnum\value{headercount}=1\fancyhead[LE,LO]{\textit{Table of Contents}}\fi\begin{singlespace}\oldtableofcontents \end{singlespace}}
+\let\oldlistoftables = \listoftables
+\renewcommand{\listoftables}{\begin{singlespace}
+\pagebreak
+\addcontentsline{toc}{chapter}{List of tables}
+\oldlistoftables \end{singlespace} \ifnum\value{headercount}=1 \fancyhead[LE,LO]{\textit{List
+of Tables}} \fi}
+
+\let\oldlistoffigures = \listoffigures
+\renewcommand{\listoffigures}{\begin{singlespace}
+ \pagebreak
+\addcontentsline{toc}{chapter}{List of figures}
+\oldlistoffigures
+\end{singlespace}\ifnum\value{headercount}=1 \fancyhead[LE,LO]{\textit{List of
+Figures}} \fi}
+
+% Make footnote indicators in footnotes full size not superscript
+\renewcommand{\@makefntext}[1]%
+  {\noindent\makebox[2.5em][r]{\@thefnmark.\ }#1}
+
+% Increase size of footnotes and try to prevent really tiny type
+% This is a kludge %RISKY
+\let\scriptsize=\small
+\let\tiny=\small
+\let\footnotesize=\small
+
+%  End of file
+%    ****************************************
+%    *           INITIALIZATION             *
+%    ****************************************
+%
+% Default initializations
+
+\ps@plain                   % 'plain' page style
+\pagenumbering{arabic}      % Arabic page numbers
+\if@twoside\else\raggedbottom\fi % Ragged bottom unless twoside
+                                 % option.
+\if@twocolumn
+ \@@input twocolum.sty\relax
+\else
+ \onecolumn                 % Single-column.
+\fi
+
+% headers & footers
+\pagestyle{fancy}
+\doublespacing
+%% \@chapapp knows when you're in an appendix 
+\def\@chapapp{\chaptername}
+\renewcommand{\chaptermark}[1]{\clearpage \ifnum\value{headercount}=1\fancyhead[LE,LO]{\textit{\@chapapp\ \thechapter: #1}}\fi}
+\fancyhf{}
+%\ifnum\value{headercount}=1
+%    \renewcommand{\headrulewidth}{2.0pt}
+%\fi
+%\ifnum\value{headercount}<1
+    \renewcommand{\headrulewidth}{0.0pt}
+%\fi
+\renewcommand{\footrulewidth}{0pt}
+
+\fancyhead[RE,RO]{\thepage}
+
+\fancypagestyle{plain}{
+  \fancyhf{}
+    \markboth{}{\thepage}
+  \fancyhead[R]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}

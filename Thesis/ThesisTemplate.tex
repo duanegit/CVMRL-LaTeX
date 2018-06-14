@@ -1,0 +1,173 @@
+\documentclass[onehalfspace,12pt,letterpaper]{uwothesisSGPS}
+%%%%%% BEGIN PERSONAL DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -- BEGIN Personal packages for this particular document --------------------------
+% In uwothesisSGPS.cls \usepackage[intlimits,sumlimits]{amsmath}
+% In uwothesisSGPS.cls \usepackage{amssymb}
+% In uwothesisSGPS.cls \usepackage{dsfont}
+%\usepackage[dvipsnames,svgnames]{xcolor}
+% In uwothesisSGPS.cls \usepackage{lscape}
+% In uwothesisSGPS.cls \usepackage{setspace}
+\usepackage{subfig}
+\usepackage{placeins}
+%\usepackage{caption}
+\usepackage{multirow}
+%\usepackage[english]{babel}
+%\usepackage{blindtext}
+% In uwothesisSGPS.cls \usepackage{graphicx}
+% In uwothesisSGPS.cls \usepackage{algorithmic}
+% In uwothesisSGPS.cls \usepackage{algorithm}
+\usepackage{tikz}
+%\usetikzlibrary{arrows,snakes,backgrounds}
+\usetikzlibrary{shapes,arrows,snakes,backgrounds}
+\usetikzlibrary{topaths}
+\usetikzlibrary{automata}
+
+% -- END Personal packages for this particular document --------------------------
+
+% -- BEGIN Personal Command Definitions --------------------------------------------
+\renewcommand{\vec}[1]{\ensuremath{\mathbf{#1}}} %create some useful macro commands to lessen the amount of typing you do
+\newcommand{\mat}[1]{\ensuremath{\texttt{#1}}}
+\newcommand{\T}{\ensuremath{^\mathsf{ T}}}
+\newcommand{\etal}{\emph{et al.\ }}              %lazy: saves tons of typing
+\newcommand{\rank}{\ensuremath{\mathbf{rank}}}
+\newcommand{\til}[1]{\ensuremath{\tilde{#1}}}
+\newcommand{\term1}{\texttt{Special-Term}}          %consistency:  ensures style for special term is consistent thru whole document  
+\newcommand{\term2}{\texttt{Equally-Special-Term}}
+\newcommand{\phraseA}{\textit{special phrase italicized for emphasis\ }}
+\newcommand{\phraseB}{\textsl{another phrase with consistent formatting\ }}
+\newcommand{\ttt}[1]{\texttt{#1}}					% lazy: saves typing on VERY commonly used command
+\newcommand{\tbf}[1]{\textbf{#1}}
+\newcommand{\e}{\ensuremath{\varepsilon}}
+% -- END Personal Command Definitions --------------------------------------------
+
+%If you do not want optional page headers then comment out the following command
+\enableHeaders
+
+% -- BEGIN Author/Supervisor/Dept information--------------------------------------------
+\title{Title Page version of the Thesis Title which is often quite lengthy}%
+\spine{Spine version of title}%
+\format{Monograph}%
+\firstname{Isaac}%
+\middlename{}%
+\lastname{Hellmuth}
+\gradprog{Engineering Science}%
+\dept{Electrical and Computer Engineering}%
+\degree{Doctor of Engineering Science}%
+\faculty{School of Graduate and Postdoctoral Studies}%
+\rights{Isaac Hellmuth 2018}%
+
+%Supervisors
+% - if you only have one supervisor leave the last set of brackets empty
+\supervisor{Co-Supervisor1 Name}{Co-Supervisor2 Name}
+\committee{Advisory-Committee Member1}{Advisory-Committee Member2}
+
+%Examiners
+% - if you have three examiners leave the last set of brackets empty
+\examiners{Depart-Member1}{Depart-Member2}{University-Member}{External-Member}%
+\chair{Examining-Committee Chair}%
+
+% -- END Author/Supervisor/Dept information--------------------------------------------
+%%%%%% END PERSONAL DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\configureThesis
+
+%-- BEGIN CONTENT----------------------------------------------------------------------
+%Abstract
+\begin{abstract}
+\input{abstract.tex}
+\end{abstract}
+
+%Acknowledgements
+\begin{acknowledgements}
+\input{acknowledgements.tex}
+\end{acknowledgements}
+
+
+%Generate Table of Contents
+\tableofcontents%
+
+%Generate List of Tables
+\listoftables%
+
+%Generate List of Figures
+\listoffigures%
+
+
+%Acronyms
+%Format for each acronym: \newack{ACRONYM}{Definition}
+\begin{acronyms}
+\newack{BA}{Bachelor of Arts}
+\newack{BAcc}{Bachelor of Accounting}
+\newack{BDS}{Bachelor of Dental Surgery}
+\newack{B.~Ed}{Bachelor of Education}
+\newack{BESc}{Bachelor of Engineering Science}
+\newack{MA}{Masters of Arts}
+\newack{MLS}{Bachelor of Accounting}
+\newack{MPA}{Masters of Public Administration}
+\newack{M.~Ed}{Masters of Education}
+\newack{ThM}{Masters of Theology}
+\newack{DDS}{Doctor of Dental Sciences
+\newack{MD}{Doctor of Medicine}
+\newack{Ph.~D}{Doctor of Philosophy}
+%\vspace{0.2in}
+\newack{$\til{S}$}{Set of DES-controller states}  		% here are examples of math symbols in the nomenclature/acronyms sections
+\newack{$\til{X}$}{Set of DES-plant events}
+\newack{$\til{R}$}{Set of DES-controller output symbols}
+\newack{$\delta$}{DES state transition function}
+\newack{$\phi$}{DES-controller output function}
+\newack{$\til{s}_{i}$}{DES-controller state}
+\newack{$\til{x}_{i}$}{non-silent DES-plant event}
+\newack{$\epsilon$}{silent DES-plant event}
+\newack{$\til{r}_{i}$}{DES-controller output}
+\newack{$D$}{State transition accuracy metric}
+\newack{$\rho_{x}[n]$}{Directional Error Fraction}
+\newack{$\theta_{e}$}{Average DEF}
+\newack{$\psi$}{Overall tracking response metric}
+\end{acronyms}
+
+
+%Configure the body of the Thesis
+%THIS CANNOT BE REMOVED
+\configureBody
+
+
+
+%Each Major Chapter should follow this format:
+%\chapter{Chapter Title}
+%\label{chapter_reference}
+%Content
+%Note: You can separate each chapters content into a separate file and use \input{filename.tex} command or \include{filename.tex}
+
+\include{Introduction}				% \include{} assumes filename extension is .tex
+\include{LiteratureReview.tex}		% or you can be explicit
+\include{Experiments.tex}
+\include{DiscussionConclusions.tex}
+\include{FutureWorks.tex}
+
+%Call References: \references{Style}{BibFile}
+%\references{IEEEtran}{../ThesisNotes}
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{Ieeetr}     % download and use the appropriate BibTeX Style File (.bst) appropriate for your disce
+\bibliography{ThesisNotes}  % commented out if you manually create and include the *.bbl file.
+							    % NOTE: "ThesisNotes.bib" is located in the parent directory
+
+
+%Start the appendix section
+%Comment this if you do not have an appendix
+\startAppendix
+
+
+%Each appendix should start with the command below that takes the argument of the appendix name
+%\appendixChapter{The First Appendix}
+%%\input{appendix1.tex}
+%The First Appendix Content
+
+\include{AppendixA}
+%\include{AppendixB}
+
+%Here is where you should put your Curriculum Vitae. The included cv.tex gives a sample CV based on FGS suggested format
+\begin{CV}
+\input{cv.tex}
+\end{CV}
+
+\end{document} 
